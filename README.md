@@ -227,7 +227,7 @@ Flexbox is supported in most modern browsers, but implemented in too many ways t
      
 The *.flex* class can be applied to any container to make the children capable of becoming flex-items. The default settings above make items justify themselves across a single row, but there are a number of class mods that can be applied...
      
-### Flex Container Modifications
+#### Flex Container Modifications
     .flex.row        { flex-direction: row; -ms-flex-direction: row }
     .flex.row-rev    { flex-direction: row-reverse; -ms-flex-direction: row-reverse }
     .flex.col        { flex-direction: column; -ms-flex-direction: column }
@@ -259,12 +259,12 @@ The default setting is "nowrap", but if you want your elements to break to anoth
        flex-basis: auto
      }
      
-### Flex Item Modifications
+#### Flex Item Modifications
     
     .flex-item.single  { flex-grow: 0 }
     .flex-item.double  { flex-grow: 1 }
     .flex-item.triple  { flex-grow: 2 }
-Flex items are allowed to grow relative to their width. So, a .single with a width setting of 200px would grow no larger than 200px, while a .double flex-item could grow to 400px, etc.
+Flex items are allowed to grow relative to their width. So, a *.single* with a width setting of 200px would grow no larger than 200px, while a *.double* flex-item could grow to 400px, etc.
     
     .order-0{ order: 0; -ms-box-ordinal: 0 }
     .order-1{ order: 1; -ms-box-ordinal: 1 }
