@@ -4,7 +4,7 @@ Introduction to Basicss
 Basicss is an object-oriented CSS framework; little bits of re-usable code make creating complex websites simple. The real beauty of this type of CSS is that the rules explain themselves. I will break down each group of rules that are included in the following sections.
 
 
-### Trigger Classes  {#triggers}
+### Trigger Classes 
 
     .off             { display: none }
     .on              { display: block }
@@ -17,7 +17,7 @@ Basicss is an object-oriented CSS framework; little bits of re-usable code make 
 
 These classes are generally used to preload a class with properties that will be change eventually via a JavaScript Timer or some other event on the page.
 
-### Positioning  {#positioning}
+### Positioning  
 
     .float-left      { float: left }
     .float-right     { float: right }
@@ -27,6 +27,12 @@ These classes are generally used to preload a class with properties that will be
     .relative        { display: block; position: relative }
     .fixed           { display: block; position: fixed }
     .static          { display: block; position: static }
+
+In regards to absolute positioning, just add the *.absolute* class and proceed to add the edge distances in-line.
+
+    <div class="absolute back-blue" style="top:100px;left:100px"> 
+        I'm absolutely positioned!
+    </div>
     
 #### z-index
 
@@ -91,7 +97,7 @@ These classes are generally used to preload a class with properties that will be
     .back-error      { background: #990000 }
     .back-success    { background: #2F7215 }
 
-### Text Modifications  {#text}
+### Text Modifications  
 #### Weights
 
     .ultralight{
@@ -153,6 +159,10 @@ These classes are generally used to preload a class with properties that will be
 
 #### Line Height    
     .lh50           { line-height: 50px }
+    .lh48           { line-height: 48px }
+    .lh46           { line-height: 46px }
+    .lh44           { line-height: 44px }
+    .lh42           { line-height: 42px }
     .lh40           { line-height: 40px }
     .lh38           { line-height: 38px }
     .lh36           { line-height: 36px }
@@ -195,7 +205,7 @@ These classes are generally used to preload a class with properties that will be
     
 
     
-Flexbox  {#flex}
+Flexbox 
 -------
 Flexbox is supported in most modern browsers, but implemented in too many ways to even try to remember.
 
@@ -271,7 +281,7 @@ Sometimes you may find the need to move a flex-item around in the stack... this 
 
 **Pro-tip:** You can force an element to the front indefinitely by giving it a negative order.
 
-Responsive Grid  {#grid}
+Responsive Grid
 ---------------
 
     .row      { width: 100%; float: left }
@@ -358,4 +368,6 @@ Basicss comes stock with 4 breakpoints...
  - .desktop
 
 ... that can be used to control the visibility of different elements depending on breakpoints. An element with the ".phone" class would only show to a phone.
+
+
 
