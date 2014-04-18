@@ -1,9 +1,9 @@
 Introduction to Basicss
 =======================
-
 Basicss is an object-oriented CSS framework; little bits of re-usable code make creating complex websites simple. The real beauty of this type of CSS is that the rules explain themselves. I will break down each group of rules that are included in the following sections.
 
-
+OOCSS
+-----
 ### Trigger Classes 
 
     .off             { display: none }
@@ -368,6 +368,5 @@ Basicss comes stock with 4 breakpoints...
  - .desktop
 
 ... that can be used to control the visibility of different elements depending on breakpoints. An element with the ".phone" class would only show to a phone.
-
 
 
