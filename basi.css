@@ -336,7 +336,8 @@
   .contain      {
     width: 98%;
     margin: 0 auto;
-    padding: 0 20px 
+    padding: 0 20px;
+    overflow: hidden;
   }
   [class*=col-]{
     padding: 5px;
