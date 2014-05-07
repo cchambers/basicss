@@ -163,6 +163,7 @@
 .steel          { color: #C0D0D8 }
 .dark-steel     { color: #86B1C5 }
 .dark-blue      { color: #006899 }
+.bright         { color: #FFFFFF }
 .white          { color: #F2F2F2 }
 .light-gray     { color: #F4F4F4 }
 .gray           { color: #EEEEEE }
@@ -184,6 +185,7 @@
 .back-steel     { background: #C0D0D8 }
 .back-dark-steel{ background: #86B1C5 }
 .back-dark-blue { background: #006899 }
+.back-bright    { background: #FFFFFF }
 .back-white     { background: #F2F2F2 }
 .back-light-gray{ background: #F4F4F4 }
 .back-gray      { background: #EEEEEE }
@@ -290,7 +292,8 @@
 
 .col-1-1        { width: 100% }
 .col-3-4        { width: 75% }
-.col-1-2        { width: 50% }
+.col-1-2, 
+.half           { width: 50% }
 .col-1-4        { width: 25% }
 .col-1-8        { width: 12.5% }
 .col-1-16       { width: 6.25% }
