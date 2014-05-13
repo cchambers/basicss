@@ -358,7 +358,8 @@ input[type=radio] + label:active{
 }
 
 .form input[type=text],
-.form input[type=number]{
+.form input[type=number],
+.form input[type=password]{
   position: relative;
   z-index: 2;
   width: 100%; 
@@ -716,3 +717,32 @@ input[type=radio] + label:active{
   transform: none;
 }
 
+/* "Call us" mobile sticky */
+
+.callus{
+  position: fixed;
+  top: -100px; left: 0;
+  width: 100%;
+  z-index: 500;
+  box-shadow: 2px 0px 3px rgba(0,0,0,.25);
+  transition: all 150ms ease;
+  min-width:  150px;
+  z-index: 1;
+}
+
+.callus .row{
+  background: #e7e8e9;
+}
+
+.callus p{
+  margin-top: 15px;
+  margin-left:15px;
+  color: #006899;
+  font-size: 14px;
+}
+
+.callus .button{
+  margin:0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

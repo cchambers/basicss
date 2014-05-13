@@ -35,7 +35,8 @@
 .middle-layer    { z-index: 50 }
 .front-layer     { z-index: 100 }
 
-.pad             { padding: 25px }
+.pad,
+.pad-box         { padding: 25px }
 .pad-sides       { padding-left: 25px; padding-right: 25px }
 .pad-lips        { padding-top: 25px; padding-bottom: 25px }
 .pad-top         { padding-top: 25px }
@@ -50,6 +51,7 @@
 .pad-right-light { padding-right: 15px }
 .pad-left-light  { padding-left: 15px }
 
+.margin,
 .margin-box      { margin: 25px }
 .margin-top      { margin-top: 25px }
 .margin-bottom   { margin-bottom: 25px }
@@ -57,11 +59,23 @@
 .margin-left     { margin-left: 25px }
 .margin-sides    { margin-left: 25px; margin-right: 25px }
 .margin-lips     { margin-top: 25px; margin-bottom: 25px }
+.margin-light,
+.margin-box-light{ margin: 15px }
+.margin-top-light{ margin-top: 15px }
+.margin-bottom-light{ margin-bottom: 15px }
+.margin-right-light{ margin-right: 15px }
+.margin-left-light{ margin-left: 15px }
+.margin-sides-light{ margin-left: 15px; margin-right: 15px }
+.margin-lips-light{ margin-top: 15px; margin-bottom: 15px }
 
 .pull-top        { margin-top: -25px }
 .pull-bottom     { margin-bottom: -25px }
 .pull-right      { margin-right: -25px }
 .pull-left       { margin-left: -25px }
+.pull-top-light  { margin-top: -15px }
+.pull-bottom-light{ margin-bottom: -15px }
+.pull-right-light{ margin-right: -15px }
+.pull-left-light{ margin-left: -15px }
 .pull-top-hard   { margin-top: -50px }
 .pull-bottom-hard{ margin-bottom: -50px }
 .pull-right-hard { margin-right: -50px }
@@ -163,6 +177,7 @@
 .steel          { color: #C0D0D8 }
 .dark-steel     { color: #86B1C5 }
 .dark-blue      { color: #006899 }
+.whiter,
 .bright         { color: #FFFFFF }
 .white          { color: #F2F2F2 }
 .light-gray     { color: #F4F4F4 }
@@ -185,6 +200,7 @@
 .back-steel     { background: #C0D0D8 }
 .back-dark-steel{ background: #86B1C5 }
 .back-dark-blue { background: #006899 }
+.back-whiter,
 .back-bright    { background: #FFFFFF }
 .back-white     { background: #F2F2F2 }
 .back-light-gray{ background: #F4F4F4 }
@@ -268,12 +284,11 @@
 .flex-item.triple  { flex-grow: 2 }
 
 
-
 .row      { width: 100%; float: left }
 
 .contain{
   position: relative;
-  width: 900px;
+  width: 920px;
   margin: 0 auto
 }
 
@@ -289,6 +304,9 @@
 [class*=col-]:first-of-type{ padding-left: 0 }
 [class*=col-]:last-of-type{ padding-right: 0 }
 [class*=col-] p:first-of-type{ margin-top: 0 }
+
+
+.half { width: 50%; float: left } /* mobile friendly half-cell */
 
 .col-1-1        { width: 100% }
 .col-3-4        { width: 75% }
@@ -337,7 +355,7 @@
     float: left
   }
   .contain      {
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
     overflow: hidden;
