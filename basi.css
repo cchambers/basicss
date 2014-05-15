@@ -10,6 +10,14 @@
   margin: 0;
 }
 
+html{
+  font-size: 10px;
+}
+
+body{ 
+  font-size: 16px;
+}
+
 .fill            { position: absolute; width: 100%; height: 100% }
 .off             { display: none }
 .on              { display: block }
@@ -124,49 +132,49 @@
 .text-center    { text-align: center }
 .text-justify   { text-align: justify }
 
-.px50           { font-size: 50px }
-.px48           { font-size: 48px }
-.px46           { font-size: 46px }
-.px44           { font-size: 44px }
-.px42           { font-size: 42px }
-.px40           { font-size: 40px }
-.px38           { font-size: 38px }
-.px36           { font-size: 36px }
-.px34           { font-size: 34px }
-.px32           { font-size: 32px }
-.px30           { font-size: 30px }
-.px28           { font-size: 28px }
-.px26           { font-size: 26px }
-.px24           { font-size: 24px }
-.px22           { font-size: 22px }
-.px20           { font-size: 20px }
-.px18           { font-size: 18px }
-.px16           { font-size: 16px }
-.px14           { font-size: 14px }
-.px12           { font-size: 12px }
-.px10           { font-size: 10px }
+.px50           { font-size: 50px; font-size: 5.0rem }
+.px48           { font-size: 48px; font-size: 4.8rem }
+.px46           { font-size: 46px; font-size: 4.6rem }
+.px44           { font-size: 44px; font-size: 4.4rem }
+.px42           { font-size: 42px; font-size: 4.2rem }
+.px40           { font-size: 40px; font-size: 4.0rem }
+.px38           { font-size: 38px; font-size: 3.8rem }
+.px36           { font-size: 36px; font-size: 3.6rem }
+.px34           { font-size: 34px; font-size: 3.4rem }
+.px32           { font-size: 32px; font-size: 3.2rem }
+.px30           { font-size: 30px; font-size: 3.0rem }
+.px28           { font-size: 28px; font-size: 2.8rem }
+.px26           { font-size: 26px; font-size: 2.6rem }
+.px24           { font-size: 24px; font-size: 2.4rem }
+.px22           { font-size: 22px; font-size: 2.2rem }
+.px20           { font-size: 20px; font-size: 2.0rem }
+.px18           { font-size: 18px; font-size: 1.8rem }
+.px16           { font-size: 16px; font-size: 1.6rem }
+.px14           { font-size: 14px; font-size: 1.4rem }
+.px12           { font-size: 12px; font-size: 1.2rem }
+.px10           { font-size: 10px; font-size: 1.0rem }
 
-.lh50           { line-height: 50px }
-.lh48           { line-height: 48px }
-.lh46           { line-height: 46px }
-.lh44           { line-height: 44px }
-.lh42           { line-height: 42px }
-.lh40           { line-height: 40px }
-.lh38           { line-height: 38px }
-.lh36           { line-height: 36px }
-.lh34           { line-height: 34px }
-.lh32           { line-height: 32px }
-.lh30           { line-height: 30px }
-.lh28           { line-height: 28px }
-.lh26           { line-height: 26px }
-.lh24           { line-height: 24px }
-.lh22           { line-height: 22px }
-.lh20           { line-height: 20px }
-.lh18           { line-height: 18px }
-.lh16           { line-height: 16px }
-.lh14           { line-height: 14px }
-.lh12           { line-height: 12px }
-.lh10           { line-height: 10px }
+.lh50           { line-height: 50px; line-height: 5.0rem }
+.lh48           { line-height: 48px; line-height: 4.8rem }
+.lh46           { line-height: 46px; line-height: 4.6rem }
+.lh44           { line-height: 44px; line-height: 4.4rem }
+.lh42           { line-height: 42px; line-height: 4.2rem }
+.lh40           { line-height: 40px; line-height: 4.0rem }
+.lh38           { line-height: 38px; line-height: 3.8rem }
+.lh36           { line-height: 36px; line-height: 3.6rem }
+.lh34           { line-height: 34px; line-height: 3.4rem }
+.lh32           { line-height: 32px; line-height: 3.2rem }
+.lh30           { line-height: 30px; line-height: 3.0rem }
+.lh28           { line-height: 28px; line-height: 2.8rem }
+.lh26           { line-height: 26px; line-height: 2.6rem }
+.lh24           { line-height: 24px; line-height: 2.4rem }
+.lh22           { line-height: 22px; line-height: 2.2rem }
+.lh20           { line-height: 20px; line-height: 2.0rem }
+.lh18           { line-height: 18px; line-height: 1.8rem }
+.lh16           { line-height: 16px; line-height: 1.6rem }
+.lh14           { line-height: 14px; line-height: 1.4rem }
+.lh12           { line-height: 12px; line-height: 1.2rem }
+.lh10           { line-height: 10px; line-height: 1.0rem }
 
 .purple         { color: #650360 }
 .violet         { color: #4A0246 }
@@ -295,6 +303,7 @@
 [class*=col-]{
   float: left;
   padding: 10px;
+  padding-left: 0;
   padding-right: 25px
 }
 
@@ -376,7 +385,6 @@
 }
 
 @media (min-width: 768px) and (max-width: 1020px) {
-  .cell         { font-size: 10px }
   .contain      { width: 760px }
   .desktop      { display: block }
   .phone        { display: none }

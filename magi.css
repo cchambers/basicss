@@ -644,7 +644,7 @@ input[type=radio] + label:active{
   display:inline-block;
   cursor:pointer;
   font-family: "Helvetica Neue", Helvetica, Arial, Roboto, sans-serif; 
-  font-weight: 100;
+  font-weight: normal;
   letter-spacing:1px;
   margin:15px 15px 20px 15px;
   padding:11px 20px 10px 20px;
