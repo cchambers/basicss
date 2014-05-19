@@ -1,5 +1,3 @@
-
-
 *,
 *:before,
 *:after{
@@ -11,11 +9,11 @@
 }
 
 html{
-  font-size: 10px;
+  font-size: 10px; 
 }
 
 body{ 
-  font-size: 16px;
+  font-size: 1.6rem; 
 }
 
 .fill            { position: absolute; width: 100%; height: 100% }
@@ -68,6 +66,7 @@ body{
 .margin-sides    { margin-left: 25px; margin-right: 25px }
 .margin-lips     { margin-top: 25px; margin-bottom: 25px }
 .margin-light,
+.margin-light,
 .margin-box-light{ margin: 15px }
 .margin-top-light{ margin-top: 15px }
 .margin-bottom-light{ margin-bottom: 15px }
@@ -83,7 +82,7 @@ body{
 .pull-top-light  { margin-top: -15px }
 .pull-bottom-light{ margin-bottom: -15px }
 .pull-right-light{ margin-right: -15px }
-.pull-left-light{ margin-left: -15px }
+.pull-left-light { margin-left: -15px }
 .pull-top-hard   { margin-top: -50px }
 .pull-bottom-hard{ margin-bottom: -50px }
 .pull-right-hard { margin-right: -50px }
@@ -310,13 +309,13 @@ body{
 .row:after,
 .contain:after,
 [class*=col-]:after{ content: "."; display: block; height: 0; overflow: hidden }
-[class*=col-]:first-of-type{ padding-left: 0 }
-[class*=col-]:last-of-type{ padding-right: 0 }
+.row [class*=col-]:first-of-type{ padding-left: 0 }
+.row [class*=col-]:last-of-type{ padding-right: 0 }
 [class*=col-] p:first-of-type{ margin-top: 0 }
 
 
 .half { width: 50%; float: left } /* mobile friendly half-cell */
-
+.qtr  { width: 25% }
 .col-1-1        { width: 100% }
 .col-3-4        { width: 75% }
 .col-1-2, 
@@ -356,7 +355,7 @@ body{
 
 }
 
-@media (min-width: 0px) and (max-width: 768px) { /* phones and tablets */
+@media (min-width: 0px) and (max-width: 768px) { /* phones and vertical tablets */
 
   img { max-width: 380px }
   .row{
@@ -376,21 +375,30 @@ body{
   [class*=col-]{
     width: 100% !important
   }
-  [class*=col-]:last-of-type{
+  .row [class*=col-]:last-of-type{
     padding-right: 10px
   }
-  .phone        { display: block !important }
+  .phone, 
+  .mobile       { display: block !important }
   .tablet,
   .desktop      { display: none !important }
 }
 
-@media (min-width: 768px) and (max-width: 1020px) {
+@media (min-width: 768px) and (max-width: 1020px) {  /* smaller desktops, and horizontal tablets */
   .contain      { width: 760px }
   .desktop      { display: block }
-  .phone        { display: none }
+  .phone,
+  .mobile       { display: none }
 }
 
 @media (min-width: 1020px) {
   .contain      { width: 900px }
-  .phone        { display: none }
+  .phone,
+  .mobile       { display: none }
+}
+
+@media (min-width: 1400px) {
+  .contain      { width: 1200px }
+  .phone,
+  .mobile       { display: none }
 }

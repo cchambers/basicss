@@ -521,7 +521,7 @@ input[type=radio] + label:active{
 
 .form .select{
   position: absolute;
-  z-index: 98;
+  z-index: 2;
   background: #fff;
   color: #505050;
   line-height: 40px;
@@ -546,7 +546,7 @@ input[type=radio] + label:active{
   overflow: hidden;
   cursor: pointer;
   position: relative;
-  z-index: 101;
+  z-index: 3;
   width: 100%;
   padding: 0 15px;
 }
@@ -570,7 +570,7 @@ input[type=radio] + label:active{
 .form .select .option.active{
   display:block !important;
   height:auto;
-  /*color:#006099;*/
+  color:#006099;
 } 
 
 .form .select .option:hover{
@@ -608,7 +608,7 @@ input[type=radio] + label:active{
   display:block;
   content:'';
   position:absolute;
-  z-index:102;
+  z-index:4;
   right: 5px;
   top: 0;
   width: 30px;
