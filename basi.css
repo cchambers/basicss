@@ -13,21 +13,29 @@ html{
 }
 
 body{ 
+  font-size: 16px; 
   font-size: 1.6rem; 
+}
+
+img{
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  max-height: 80vh;
 }
 
 .fill            { position: absolute; width: 100%; height: 100% }
 .off             { display: none }
-.on              { display: block }
-.on-inline       { display: inline-block }
+.on,
+.block           { display: block }
+.on-inline,
+.inline          { display: inline-block }
 .alpha-off       { opacity: 0 }
 .alpha-on        { opacity: 1 }
 .stage-right     { left: 110% !important }
 .stage-left      { right: 110% !important }
 .stage-top       { bottom: 110% !important }
 .stage-bottom    { top: 110% !important }
-.float-left      { float: left }
-.float-right     { float: right }
 
 .absolute        { display: block; position: absolute }
 .relative        { display: block; position: relative }
@@ -42,13 +50,13 @@ body{
 .front-layer     { z-index: 100 }
 
 .pad,
-.pad-box         { padding: 25px }
-.pad-sides       { padding-left: 25px; padding-right: 25px }
-.pad-lips        { padding-top: 25px; padding-bottom: 25px }
-.pad-top         { padding-top: 25px }
-.pad-bottom      { padding-bottom: 25px }
-.pad-right       { padding-right: 25px }
-.pad-left        { padding-left: 25px }
+.pad-box         { padding: 30px }
+.pad-sides       { padding-left: 30px; padding-right: 30px }
+.pad-lips        { padding-top: 30px; padding-bottom: 30px }
+.pad-top         { padding-top: 30px }
+.pad-bottom      { padding-bottom: 30px }
+.pad-right       { padding-right: 30px }
+.pad-left        { padding-left: 30px }
 .pad-light       { padding: 15px }
 .pad-sides-light { padding-left: 15px; padding-right: 15px }
 .pad-lips-light  { padding-top: 15px; padding-bottom: 15px }
@@ -58,13 +66,13 @@ body{
 .pad-left-light  { padding-left: 15px }
 
 .margin,
-.margin-box      { margin: 25px }
-.margin-top      { margin-top: 25px }
-.margin-bottom   { margin-bottom: 25px }
-.margin-right    { margin-right: 25px }
-.margin-left     { margin-left: 25px }
-.margin-sides    { margin-left: 25px; margin-right: 25px }
-.margin-lips     { margin-top: 25px; margin-bottom: 25px }
+.margin-box      { margin: 30px }
+.margin-top      { margin-top: 30px }
+.margin-bottom   { margin-bottom: 30px }
+.margin-right    { margin-right: 30px }
+.margin-left     { margin-left: 30px }
+.margin-sides    { margin-left: 30px; margin-right: 30px }
+.margin-lips     { margin-top: 30px; margin-bottom: 30px }
 .margin-light,
 .margin-light,
 .margin-box-light{ margin: 15px }
@@ -75,10 +83,10 @@ body{
 .margin-sides-light{ margin-left: 15px; margin-right: 15px }
 .margin-lips-light{ margin-top: 15px; margin-bottom: 15px }
 
-.pull-top        { margin-top: -25px }
-.pull-bottom     { margin-bottom: -25px }
-.pull-right      { margin-right: -25px }
-.pull-left       { margin-left: -25px }
+.pull-top        { margin-top: -30px }
+.pull-bottom     { margin-bottom: -30px }
+.pull-right      { margin-right: -30px }
+.pull-left       { margin-left: -30px }
 .pull-top-light  { margin-top: -15px }
 .pull-bottom-light{ margin-bottom: -15px }
 .pull-right-light{ margin-right: -15px }
@@ -88,7 +96,10 @@ body{
 .pull-right-hard { margin-right: -50px }
 .pull-left-hard  { margin-left: -50px }
 
-.center-box      { margin-left: auto; margin-right: auto; max-width: 800px }
+.center-box,
+.float-center    { margin-left: auto; margin-right: auto }
+.float-left      { float: left }
+.float-right     { float: right }
 
 .round           { border-radius: 50% }
 
@@ -226,6 +237,7 @@ body{
 .lowercase      { text-transform: lowercase }
 .titlecase      { text-transform: capitalize }
 .strike         { text-decoration: line-through }
+.italic         { font-style: italic }
 
 .clear:before,
 .clear:after    { content: "."; display: block; height: 0; overflow: hidden; clear: both }
@@ -301,9 +313,9 @@ body{
 
 [class*=col-]{
   float: left;
-  padding: 10px;
+  padding: 15px;
   padding-left: 0;
-  padding-right: 25px
+  padding-right: 30px
 }
 
 .row:after,
@@ -314,18 +326,22 @@ body{
 [class*=col-] p:first-of-type{ margin-top: 0 }
 
 
-.half { width: 50%; float: left } /* mobile friendly half-cell */
-.qtr  { width: 25% }
 .col-1-1        { width: 100% }
 .col-3-4        { width: 75% }
 .col-1-2, 
 .half           { width: 50% }
-.col-1-4        { width: 25% }
+.col-1-4,
+.qtr            { width: 25% }
 .col-1-8        { width: 12.5% }
 .col-1-16       { width: 6.25% }
 
 .col-2-3        { width: 66.66% }
-.col-1-3        { width: 33.33% }
+.col-1-3,
+.third          { width: 33.33% }
+
+.half,
+.qtr,
+.third          { float: left }
 
 .inset{
   margin: 0 .5%;
@@ -360,27 +376,19 @@ body{
   img { max-width: 380px }
   .row{
     overflow: visible;
-    float: left
+    float: left;
   }
   .contain      {
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
     overflow: hidden;
-  }
-  [class*=col-]{
-    padding: 5px;
-    margin-bottom: 15px
   }
   [class*=col-]{
     width: 100% !important
   }
-  .row [class*=col-]:last-of-type{
-    padding-right: 10px
-  }
-  .phone, 
+  .phone,
   .mobile       { display: block !important }
-  .tablet,
   .desktop      { display: none !important }
 }
 
@@ -397,7 +405,7 @@ body{
   .mobile       { display: none }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .contain      { width: 1200px }
   .phone,
   .mobile       { display: none }
