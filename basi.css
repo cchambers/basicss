@@ -1,3 +1,21 @@
+/*
+  $$\                           $$\                                  
+  $$ |                          \__|                                 
+  $$$$$$$\   $$$$$$\   $$$$$$$\ $$\     $$$$$$$\  $$$$$$$\  $$$$$$$\ 
+  $$  __$$\  \____$$\ $$  _____|$$ |   $$  _____|$$  _____|$$  _____|
+  $$ |  $$ | $$$$$$$ |\$$$$$$\  $$ |   $$ /      \$$$$$$\  \$$$$$$\  
+  $$ |  $$ |$$  __$$ | \____$$\ $$ |   $$ |       \____$$\  \____$$\ 
+  $$$$$$$  |\$$$$$$$ |$$$$$$$  |$$ |$$\\$$$$$$$\ $$$$$$$  |$$$$$$$  |
+  \_______/  \_______|\_______/ \__|\__|\_______|\_______/ \_______/ 
+  
+  by Chris Chambers
+  @chriswritescode
+  http://www.basicss.com
+  version: 2.2 (June 14, 2014)
+/
+*/
+
+
 *,
 *:before,
 *:after{
@@ -24,124 +42,160 @@ img{
   max-height: 80vh;
 }
 
-.fill            { position: absolute; width: 100%; height: 100% }
-.off             { display: none }
-.on,
-.block           { display: block }
-.on-inline,
-.inline          { display: inline-block }
-.alpha-off       { opacity: 0 }
-.alpha-on        { opacity: 1 }
-.stage-right     { left: 110% !important }
-.stage-left      { right: 110% !important }
-.stage-top       { bottom: 110% !important }
-.stage-bottom    { top: 110% !important }
+a{
+  text-decoration: none;
+}
 
-.absolute        { display: block; position: absolute }
-.relative        { display: block; position: relative }
-.fixed           { display: block; position: fixed }
-.static          { display: block; position: static }
-.clear           { clear: both; overflow: hidden }
-.overhide        { overflow: hidden }
-.overshow        { overflow: visible }
-.sub-layer       { z-index: -1 }
-.back-layer      { z-index: 1 }
-.middle-layer    { z-index: 50 }
-.front-layer     { z-index: 100 }
+.fill               { position: absolute; width: 100%; height: 100% }
+.off                { display: none }
+.on,    
+.block              { display: block }
+.on-inline,   
+.inline             { display: inline-block }
+.alpha-off          { opacity: 0 }
+.alpha-on           { opacity: 1 }
+.stage-right        { left: 110% !important }
+.stage-left         { right: 110% !important }
+.stage-top          { bottom: 110% !important }
+.stage-bottom       { top: 110% !important }
 
-.pad,
-.pad-box         { padding: 30px }
-.pad-sides       { padding-left: 30px; padding-right: 30px }
-.pad-lips        { padding-top: 30px; padding-bottom: 30px }
-.pad-top         { padding-top: 30px }
-.pad-bottom      { padding-bottom: 30px }
-.pad-right       { padding-right: 30px }
-.pad-left        { padding-left: 30px }
-.pad-light       { padding: 15px }
-.pad-sides-light { padding-left: 15px; padding-right: 15px }
-.pad-lips-light  { padding-top: 15px; padding-bottom: 15px }
-.pad-top-light   { padding-top: 15px }
-.pad-bottom-light{ padding-bottom: 15px }
-.pad-right-light { padding-right: 15px }
-.pad-left-light  { padding-left: 15px }
+.absolute           { display: block; position: absolute }
+.relative           { display: block; position: relative }
+.fixed              { display: block; position: fixed }
+.static             { display: block; position: static }
+.clear              { clear: both; overflow: hidden }
+.overhide           { overflow: hidden }
+.overshow           { overflow: visible }
+.sub-layer          { z-index: -1 }
+.back-layer         { z-index: 1 }
+.middle-layer       { z-index: 50 }
+.front-layer        { z-index: 100 }
 
-.margin,
-.margin-box      { margin: 30px }
-.margin-top      { margin-top: 30px }
-.margin-bottom   { margin-bottom: 30px }
-.margin-right    { margin-right: 30px }
-.margin-left     { margin-left: 30px }
-.margin-sides    { margin-left: 30px; margin-right: 30px }
-.margin-lips     { margin-top: 30px; margin-bottom: 30px }
+.pad,   
+.pad-box            { padding: 30px }
+.pad-sides          { padding-left: 30px; padding-right: 30px }
+.pad-lips           { padding-top: 30px; padding-bottom: 30px }
+.pad-top            { padding-top: 30px }
+.pad-bottom         { padding-bottom: 30px }
+.pad-right          { padding-right: 30px }
+.pad-left           { padding-left: 30px }
+.pad-light          { padding: 15px }
+.pad-sides-light    { padding-left: 15px; padding-right: 15px }
+.pad-lips-light     { padding-top: 15px; padding-bottom: 15px }
+.pad-top-light      { padding-top: 15px }
+.pad-bottom-light   { padding-bottom: 15px }
+.pad-right-light    { padding-right: 15px }
+.pad-left-light     { padding-left: 15px }
+
+.margin,    
+.margin-box         { margin: 30px }
+.margin-top         { margin-top: 30px }
+.margin-bottom      { margin-bottom: 30px }
+.margin-right       { margin-right: 30px }
+.margin-left        { margin-left: 30px }
+.margin-sides       { margin-left: 30px; margin-right: 30px }
+.margin-lips        { margin-top: 30px; margin-bottom: 30px }
 .margin-light,
 .margin-light,
-.margin-box-light{ margin: 15px }
-.margin-top-light{ margin-top: 15px }
+.margin-box-light   { margin: 15px }
+.margin-top-light   { margin-top: 15px }
 .margin-bottom-light{ margin-bottom: 15px }
-.margin-right-light{ margin-right: 15px }
-.margin-left-light{ margin-left: 15px }
-.margin-sides-light{ margin-left: 15px; margin-right: 15px }
-.margin-lips-light{ margin-top: 15px; margin-bottom: 15px }
+.margin-right-light { margin-right: 15px }
+.margin-left-light  { margin-left: 15px }
+.margin-sides-light { margin-left: 15px; margin-right: 15px }
+.margin-lips-light  { margin-top: 15px; margin-bottom: 15px }
 
-.pull-top        { margin-top: -30px }
-.pull-bottom     { margin-bottom: -30px }
-.pull-right      { margin-right: -30px }
-.pull-left       { margin-left: -30px }
-.pull-top-light  { margin-top: -15px }
-.pull-bottom-light{ margin-bottom: -15px }
-.pull-right-light{ margin-right: -15px }
-.pull-left-light { margin-left: -15px }
-.pull-top-hard   { margin-top: -50px }
-.pull-bottom-hard{ margin-bottom: -50px }
-.pull-right-hard { margin-right: -50px }
-.pull-left-hard  { margin-left: -50px }
+.pull-top           { margin-top: -30px }
+.pull-bottom        { margin-bottom: -30px }
+.pull-right         { margin-right: -30px }
+.pull-left          { margin-left: -30px }
+.pull-top-light     { margin-top: -15px }
+.pull-bottom-light  { margin-bottom: -15px }
+.pull-right-light   { margin-right: -15px }
+.pull-left-light    { margin-left: -15px }
+.pull-top-hard      { margin-top: -50px }
+.pull-bottom-hard   { margin-bottom: -50px }
+.pull-right-hard    { margin-right: -50px }
+.pull-left-hard     { margin-left: -50px }
 
 .center-box,
-.float-center    { margin-left: auto; margin-right: auto }
-.float-left      { float: left }
-.float-right     { float: right }
+.float-center       { margin-left: auto; margin-right: auto }
+.float-left         { float: left }
+.float-right        { float: right }
 
-.round           { border-radius: 50% }
+.round              { border-radius: 50% }
 
-.cols2           { 
+.cols-2 { 
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2
 }
-.cols3           { 
+.cols-3 { 
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3
 }
-
+.cols-4 { 
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4
+}
 
 
 .ultralight{
   font-family: 'HelveticaNeue-UltraLight',
-    'Helvetica Neue UltraLight',
-    'Helvetica Neue', 
-    Helvetica, Arial, Roboto, sans-serif;
+  'Helvetica Neue UltraLight',
+  'Helvetica Neue', 
+  Helvetica, Arial, Roboto, sans-serif;
   font-weight: 100;
   letter-spacing: 1px
 }
 .light   { 
   font-family: "HelveticaNeue-Light", 
-    "Helvetica Neue Light", 
-    Helvetica, Arial, Roboto, sans-serif }
+  "Helvetica Neue Light", 
+  Helvetica, Arial, Roboto, sans-serif;
+}
 .normal  {
   font-family: "Helvetica Neue", 
-    Helvetica, Arial, Roboto, sans-serif;
-  font-weight: normal }
+  Helvetica, Arial, Roboto, sans-serif;
+  font-weight: normal;
+}
 .bold    {
   font-family: "Helvetica Neue", 
-    Helvetica, Arial, Roboto, sans-serif;
-  font-weight: 700 }
+  Helvetica, Arial, Roboto, sans-serif;
+  font-weight: 700;
+}
 
 .text-right     { text-align: right }
 .text-left      { text-align: left }
 .text-center    { text-align: center }
 .text-justify   { text-align: justify }
 
+.px100          { font-size: 100px; font-size: 10rem }
+.px98           { font-size: 98px; font-size: 9.8rem }
+.px96           { font-size: 96px; font-size: 9.6rem }
+.px94           { font-size: 94px; font-size: 9.4rem }
+.px92           { font-size: 92px; font-size: 9.2rem }
+.px90           { font-size: 90px; font-size: 9.0rem }
+.px88           { font-size: 88px; font-size: 8.8rem }
+.px86           { font-size: 86px; font-size: 8.6rem }
+.px84           { font-size: 84px; font-size: 8.4rem }
+.px82           { font-size: 82px; font-size: 8.2rem }
+.px80           { font-size: 80px; font-size: 8.0rem }
+.px78           { font-size: 78px; font-size: 7.8rem }
+.px76           { font-size: 76px; font-size: 7.6rem }
+.px74           { font-size: 74px; font-size: 7.4rem }
+.px72           { font-size: 72px; font-size: 7.2rem }
+.px70           { font-size: 70px; font-size: 7.0rem }
+.px68           { font-size: 68px; font-size: 6.8rem }
+.px66           { font-size: 66px; font-size: 6.6rem }
+.px64           { font-size: 64px; font-size: 6.4rem }
+.px62           { font-size: 62px; font-size: 6.2rem }
+.px60           { font-size: 60px; font-size: 6.0rem }
+.px58           { font-size: 58px; font-size: 5.8rem }
+.px56           { font-size: 56px; font-size: 5.6rem }
+.px54           { font-size: 54px; font-size: 5.4rem }
+.px52           { font-size: 52px; font-size: 5.2rem }
 .px50           { font-size: 50px; font-size: 5.0rem }
 .px48           { font-size: 48px; font-size: 4.8rem }
 .px46           { font-size: 46px; font-size: 4.6rem }
@@ -164,6 +218,31 @@ img{
 .px12           { font-size: 12px; font-size: 1.2rem }
 .px10           { font-size: 10px; font-size: 1.0rem }
 
+.lh100          { line-height: 100px; line-height: 10rem }
+.lh98           { line-height: 98px; line-height: 9.8rem }
+.lh96           { line-height: 96px; line-height: 9.6rem }
+.lh94           { line-height: 94px; line-height: 9.4rem }
+.lh92           { line-height: 92px; line-height: 9.2rem }
+.lh90           { line-height: 90px; line-height: 9.0rem }
+.lh88           { line-height: 88px; line-height: 8.8rem }
+.lh86           { line-height: 86px; line-height: 8.6rem }
+.lh84           { line-height: 84px; line-height: 8.4rem }
+.lh82           { line-height: 82px; line-height: 8.2rem }
+.lh80           { line-height: 80px; line-height: 8.0rem }
+.lh78           { line-height: 78px; line-height: 7.8rem }
+.lh76           { line-height: 76px; line-height: 7.6rem }
+.lh74           { line-height: 74px; line-height: 7.4rem }
+.lh72           { line-height: 72px; line-height: 7.2rem }
+.lh70           { line-height: 70px; line-height: 7.0rem }
+.lh68           { line-height: 68px; line-height: 6.8rem }
+.lh66           { line-height: 66px; line-height: 6.6rem }
+.lh64           { line-height: 64px; line-height: 6.4rem }
+.lh62           { line-height: 62px; line-height: 6.2rem }
+.lh60           { line-height: 60px; line-height: 6.0rem }
+.lh58           { line-height: 58px; line-height: 5.8rem }
+.lh56           { line-height: 56px; line-height: 5.6rem }
+.lh54           { line-height: 54px; line-height: 5.4rem }
+.lh52           { line-height: 52px; line-height: 5.2rem }
 .lh50           { line-height: 50px; line-height: 5.0rem }
 .lh48           { line-height: 48px; line-height: 4.8rem }
 .lh46           { line-height: 46px; line-height: 4.6rem }
@@ -328,35 +407,16 @@ img{
 
 .col-1-1        { width: 100% }
 .col-3-4        { width: 75% }
-.col-1-2, 
-.half           { width: 50% }
-.col-1-4,
-.qtr            { width: 25% }
+.col-1-2, .half { width: 50% }
+.col-1-4, .qtr  { width: 25% }
 .col-1-8        { width: 12.5% }
 .col-1-16       { width: 6.25% }
-
 .col-2-3        { width: 66.66% }
-.col-1-3,
-.third          { width: 33.33% }
+.col-1-3, .third{ width: 33.33% }
 
 .half,
 .qtr,
 .third          { float: left }
-
-.inset{
-  margin: 0 .5%;
-  background: #ccc;
-  color: #222;
-  border-radius: 3px;
-}
-
-.row.inset      { width: 99% }
-
-.col-1-2.inset  { width: 49% }
-.col-1-4.inset  { width: 24% }
-.col-1-8.inset  { width: 11.5% }
-.col-2-3.inset  { width: 65.66% }
-.col-1-3.inset  { width: 32.33% }
 
 .offset-1       { margin-left: 12.5% }
 .offset-2       { margin-left: 25% }
@@ -368,12 +428,9 @@ img{
 
 @media (max-width: 500px) { /* phones */
 
-
 }
 
 @media (min-width: 0px) and (max-width: 768px) { /* phones and vertical tablets */
-
-  img { max-width: 380px }
   .row{
     overflow: visible;
     float: left;
