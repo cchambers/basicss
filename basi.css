@@ -79,13 +79,24 @@ a{
 .pad-bottom         { padding-bottom: 30px }
 .pad-right          { padding-right: 30px }
 .pad-left           { padding-left: 30px }
-.pad-light          { padding: 15px }
+.pad-light,
+.pad-box-light      { padding: 15px }
 .pad-sides-light    { padding-left: 15px; padding-right: 15px }
 .pad-lips-light     { padding-top: 15px; padding-bottom: 15px }
 .pad-top-light      { padding-top: 15px }
 .pad-bottom-light   { padding-bottom: 15px }
 .pad-right-light    { padding-right: 15px }
 .pad-left-light     { padding-left: 15px }
+
+
+.pad-hard,
+.pad-box-hard      { padding: 60px }
+.pad-sides-hard    { padding-left: 60px; padding-right: 60px }
+.pad-lips-hard     { padding-top: 60px; padding-bottom: 60px }
+.pad-top-hard      { padding-top: 60px }
+.pad-bottom-hard   { padding-bottom: 60px }
+.pad-right-hard    { padding-right: 60px }
+.pad-left-hard     { padding-left: 60px }
 
 .margin,    
 .margin-box         { margin: 30px }
@@ -103,6 +114,14 @@ a{
 .margin-left-light  { margin-left: 15px }
 .margin-sides-light { margin-left: 15px; margin-right: 15px }
 .margin-lips-light  { margin-top: 15px; margin-bottom: 15px }
+.margin-hard,       
+.margin-box-hard    { margin: 60px }
+.margin-top-hard    { margin-top: 60px }
+.margin-bottom-hard { margin-bottom: 60px }
+.margin-right-hard  { margin-right: 60px }
+.margin-left-hard   { margin-left: 60px }
+.margin-sides-hard  { margin-left: 60px; margin-right: 60px }
+.margin-lips-hard   { margin-top: 60px; margin-bottom: 60px }
 
 .pull-top           { margin-top: -30px }
 .pull-bottom        { margin-bottom: -30px }
@@ -112,10 +131,10 @@ a{
 .pull-bottom-light  { margin-bottom: -15px }
 .pull-right-light   { margin-right: -15px }
 .pull-left-light    { margin-left: -15px }
-.pull-top-hard      { margin-top: -50px }
-.pull-bottom-hard   { margin-bottom: -50px }
-.pull-right-hard    { margin-right: -50px }
-.pull-left-hard     { margin-left: -50px }
+.pull-top-hard      { margin-top: -60px }
+.pull-bottom-hard   { margin-bottom: -60px }
+.pull-right-hard    { margin-right: -60px }
+.pull-left-hard     { margin-left: -60px }
 
 .center-box,
 .float-center       { margin-left: auto; margin-right: auto }
