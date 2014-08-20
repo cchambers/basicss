@@ -7,11 +7,10 @@
   $$ |  $$ |$$  __$$ | \____$$\ $$ |   $$ |       \____$$\  \____$$\ 
   $$$$$$$  |\$$$$$$$ |$$$$$$$  |$$ |$$\\$$$$$$$\ $$$$$$$  |$$$$$$$  |
   \_______/  \_______|\_______/ \__|\__|\_______|\_______/ \_______/ 
-  
-  by Chris Chambers
-  @chriswritescode
-  http://www.basicss.com
-  version: 2.5 (August 1, 2014)
+
+  Version: basi.css actual (August 11, 2014)
+  Author: Chris Chambers
+  version: 2.2 (August 11, 2014)
 /
 */
 
@@ -284,6 +283,7 @@ a{
 .blue           { color: #328FC2 }
 .sky            { color: #3798C7 }
 .cyan           { color: #8BD3F5 }
+.steel          { color: #C0D0D8 }
 .sand           { color: #E8D4A3 }
 .toaster        { color: #5EADB2 }
 .dark-blue      { color: #006899 }
@@ -308,6 +308,7 @@ a{
 .back-blue      { background: #328FC2 }
 .back-sky       { background: #3798C7 }
 .back-cyan      { background: #8BD3F5 }
+.back-steel     { background: #C0D0D8 }
 .back-sand      { background: #E8D4A3 }
 .back-toaster   { background: #5EADB2 }
 .back-dark-blue { background: #006899 }

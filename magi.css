@@ -30,17 +30,17 @@
 
 @font-face {
   font-family: "allycons";
-  src:url('/resources/pres/marketing/allyconsEOT.eot');
-  src:url('/resources/pres/marketing/allyconsEOT.eot?#iefix') format('embedded-opentype'),
-    url('/resources/pres/marketing/allyconsWOFF.woff') format('woff'),
-    url('/resources/pres/marketing/allyconsTTF.ttf') format('truetype'),
-    url('/resources/pres/marketing/allyconsSVG.svg#allycons') format('svg');
+  src:url('http://www.ally.com/resources/pres/marketing/allyconsEOT.eot');
+  src:url('http://www.ally.com/resources/pres/marketing/allyconsEOT.eot?#iefix') format('embedded-opentype'),
+    url('http://www.ally.com/resources/pres/marketing/allyconsWOFF.woff') format('woff'),
+    url('http://www.ally.com/resources/pres/marketing/allyconsTTF.ttf') format('truetype'),
+    url('http://www.ally.com/resources/pres/marketing/allyconsSVG.svg#allycons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  font-family: 'allycons' !important;
+  font-family: 'allycons';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -51,78 +51,115 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-rarrow:before {
+.icon-equals:before {
   content: "\e600";
 }
-.icon-question:before {
+.icon-ally:before {
   content: "\e601";
 }
-.icon-playcircle:before {
+.icon-moneymail:before {
   content: "\e602";
 }
-.icon-play:before {
+.icon-mail:before {
   content: "\e603";
 }
-.icon-pausecircle:before {
+.icon-paperstack:before {
   content: "\e604";
 }
-.icon-pause:before {
+.icon-maplocate:before {
   content: "\e605";
 }
-.icon-navbottom:before {
+.icon-phone:before {
   content: "\e606";
 }
-.icon-moneymagnify:before {
+.icon-piggybank:before {
   content: "\e607";
 }
-.icon-magnify:before {
+.icon-popmoney:before {
   content: "\e608";
 }
-.icon-lock:before {
+.icon-transfer-ira:before {
   content: "\e609";
 }
-.icon-lly:before {
+.icon-transfer:before {
   content: "\e60a";
 }
-.icon-link:before {
+.icon-a:before {
   content: "\e60b";
 }
-.icon-larrow:before {
+.icon-add:before {
   content: "\e60c";
 }
-.icon-doccheck:before {
+.icon-alert:before {
   content: "\e60d";
 }
-.icon-doc:before {
+.icon-ally_auto:before {
   content: "\e60e";
 }
-.icon-check:before {
+.icon-ally_bank:before {
   content: "\e60f";
 }
-.icon-cancel:before {
+.icon-bar:before {
   content: "\e610";
 }
 .icon-calendar:before {
   content: "\e611";
 }
-.icon-bar:before {
+.icon-cancel:before {
   content: "\e612";
 }
-.icon-ally_bank:before {
+.icon-check:before {
   content: "\e613";
 }
-.icon-ally_auto:before {
+.icon-doc:before {
   content: "\e614";
 }
-.icon-alert:before {
+.icon-doccheck:before {
   content: "\e615";
 }
-.icon-add:before {
+.icon-larrow:before {
   content: "\e616";
 }
-.icon-a:before {
+.icon-link:before {
   content: "\e617";
 }
+.icon-lly:before {
+  content: "\e618";
+}
+.icon-lock:before {
+  content: "\e619";
+}
+.icon-magnify:before {
+  content: "\e61a";
+}
+.icon-moneymagnify:before {
+  content: "\e61b";
+}
+.icon-navbottom:before {
+  content: "\e61c";
+}
+.icon-pause:before {
+  content: "\e61d";
+}
+.icon-pausecircle:before {
+  content: "\e61e";
+}
+.icon-play:before {
+  content: "\e61f";
+}
+.icon-playcircle:before {
+  content: "\e620";
+}
+.icon-question:before {
+  content: "\e621";
+}
+.icon-rarrow:before {
+  content: "\e622";
+}
+.icon-settings:before {
+  content: "\e623";
+}
+
 
 /*                                $$\                     
                                   $$ |                    
@@ -193,7 +230,7 @@
  }
 
  .oculus .close:before{
-  content: '';
+  content: '\e612';
   color: #006899;
   font-family: "allycons";
  }
@@ -221,14 +258,14 @@
   position: absolute;
   top: 3px; right: -25px;
   font-size: 24px;
-  content: '';
+  content: '\e622';
   font-family: "allycons";
  }
 
  .oculus .controls .prev:after{
   display: block;
   position: absolute;
-  content: '';
+  content: '\e616';
   font-size: 24px;
   top: 0px; left: -20px;
   font-family: "allycons";
