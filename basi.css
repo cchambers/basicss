@@ -8,29 +8,28 @@
   $$$$$$$  |\$$$$$$$ |$$$$$$$  |$$ |$$\\$$$$$$$\ $$$$$$$  |$$$$$$$  |
   \_______/  \_______|\_______/ \__|\__|\_______|\_______/ \_______/ 
 
-  Version: basi.css actual (August 11, 2014)
+  Version: basi.css actual
   Author: Chris Chambers
-  version: 2.2 (August 11, 2014)
+  version: 3 [09.13.1]4
 /
 */
 
 *,
 *:before,
 *:after{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: inherit;
 }
 
 html{
   font-size: 10px; 
+  box-sizing: border-box;
 }
 
 body{ 
+  font-size: 1.6rem;
   font-size: 16px; 
-  font-size: 1.6rem; 
 }
 
 img{
@@ -38,124 +37,121 @@ img{
   max-width: 100%;
   height: auto;
   max-height: 80vh;
+  border: 0;
 }
 
-a{
-  text-decoration: none;
-}
+.fill            { position: absolute; width: 100%; height: 100% }
+.fill-height     { height: 100% }
+.fill-width      { width: 100% }
+.off             { display: none }
+.on,
+.block           { display: block }
+.on-inline,
+.inline          { display: inline-block }
+.alpha-off       { opacity: 0 }
+.alpha-on        { opacity: 1 }
+.stage-right     { left: 110% !important }
+.stage-left      { right: 110% !important }
+.stage-top       { bottom: 110% !important }
+.stage-bottom    { top: 110% !important }
 
-.fill               { position: absolute; width: 100%; height: 100% }
-.off                { display: none }
-.on,    
-.block              { display: block }
-.on-inline,   
-.inline             { display: inline-block }
-.alpha-off          { opacity: 0 }
-.alpha-on           { opacity: 1 }
-.stage-right        { left: 110% !important }
-.stage-left         { right: 110% !important }
-.stage-top          { bottom: 110% !important }
-.stage-bottom       { top: 110% !important }
+.absolute        { display: block; position: absolute }
+.relative        { display: block; position: relative }
+.fixed           { display: block; position: fixed }
+.static          { display: block; position: static }
+.clear           { clear: both; overflow: hidden }
+.overhide        { overflow: hidden !important }
+.overshow        { overflow: visible !important }
+.sub-layer       { position: relative; z-index: -1 }
+.back-layer      { position: relative; z-index: 1 }
+.middle-layer    { position: relative; z-index: 2 }
+.front-layer     { position: relative; z-index: 3 }
 
-.absolute           { display: block; position: absolute }
-.relative           { display: block; position: relative }
-.fixed              { display: block; position: fixed }
-.static             { display: block; position: static }
-.clear              { clear: both; overflow: hidden }
-.overhide           { overflow: hidden }
-.overshow           { overflow: visible }
-.sub-layer          { z-index: -1 }
-.back-layer         { z-index: 1 }
-.middle-layer       { z-index: 50 }
-.front-layer        { z-index: 100 }
 
+.no-pad             { padding: 0 !important }
 .pad,   
-.pad-box            { padding: 30px }
-.pad-sides          { padding-left: 30px; padding-right: 30px }
-.pad-lips           { padding-top: 30px; padding-bottom: 30px }
-.pad-top            { padding-top: 30px }
-.pad-bottom         { padding-bottom: 30px }
-.pad-right          { padding-right: 30px }
-.pad-left           { padding-left: 30px }
+.pad-box            { padding: 30px; padding: 3rem }
+.pad-sides          { padding-left: 30px; padding-right: 30px; padding-left: 3rem; padding-right: 3rem }
+.pad-lips           { padding-top: 30px; padding-bottom: 30px; padding-top: 3rem; padding-bottom: 3rem }
+.pad-top            { padding-top: 30px; padding-top: 3rem }
+.pad-bottom         { padding-bottom: 30px; padding-bottom: 3rem }
+.pad-right          { padding-right: 30px; padding-right: 3rem }
+.pad-left           { padding-left: 30px; padding-left: 3rem; }
 .pad-light,
-.pad-box-light      { padding: 15px }
-.pad-sides-light    { padding-left: 15px; padding-right: 15px }
-.pad-lips-light     { padding-top: 15px; padding-bottom: 15px }
-.pad-top-light      { padding-top: 15px }
-.pad-bottom-light   { padding-bottom: 15px }
-.pad-right-light    { padding-right: 15px }
-.pad-left-light     { padding-left: 15px }
+.pad-box-light      { padding: 15px; padding: 1.5rem; }
+.pad-sides-light    { padding-left: 15px; padding-right: 15px; padding-left: 1.5rem; padding-right: 1.5rem }
+.pad-lips-light     { padding-top: 15px; padding-bottom: 15px; padding-top: 1.5rem; padding-bottom: 1.5rem }
+.pad-top-light      { padding-top: 15px; padding-top: 1.5rem }
+.pad-bottom-light   { padding-bottom: 15px; padding-bottom: 1.5rem }
+.pad-right-light    { padding-right: 15px; padding-right: 1.5rem }
+.pad-left-light     { padding-left: 15px; padding-left: 1.5rem }
 .pad-hard,
-.pad-box-hard      { padding: 60px }
-.pad-sides-hard    { padding-left: 60px; padding-right: 60px }
-.pad-lips-hard     { padding-top: 60px; padding-bottom: 60px }
-.pad-top-hard      { padding-top: 60px }
-.pad-bottom-hard   { padding-bottom: 60px }
-.pad-right-hard    { padding-right: 60px }
-.pad-left-hard     { padding-left: 60px }
+.pad-box-hard       { padding: 60px; padding: 6rem }
+.pad-sides-hard     { padding-left: 60px; padding-right: 60px; padding-left: 6rem; padding-right: 6rem }
+.pad-lips-hard      { padding-top: 60px; padding-bottom: 60px; padding-top: 6rem; padding-bottom: 6rem }
+.pad-top-hard       { padding-top: 60px; padding-top: 6rem }
+.pad-bottom-hard    { padding-bottom: 60px; padding-bottom: 6rem }
+.pad-right-hard     { padding-right: 60px; padding-right: 6rem }
+.pad-left-hard      { padding-left: 60px; padding-left: 6rem }
 
 .margin,    
-.margin-box         { margin: 30px }
-.margin-top         { margin-top: 30px }
-.margin-bottom      { margin-bottom: 30px }
-.margin-right       { margin-right: 30px }
-.margin-left        { margin-left: 30px }
-.margin-sides       { margin-left: 30px; margin-right: 30px }
-.margin-lips        { margin-top: 30px; margin-bottom: 30px }
+.margin-box         { margin: 30px; margin: 3rem }
+.margin-top         { margin-top: 30px; margin-top: 3rem }
+.margin-bottom      { margin-bottom: 30px; margin-bottom: 3rem; }
+.margin-right       { margin-right: 30px; margin-right: 3rem }
+.margin-left        { margin-left: 30px; margin-left: 3rem }
+.margin-sides       { margin-left: 30px; margin-right: 30px; margin-left: 3rem; margin-right: 3rem }
+.margin-lips        { margin-top: 30px; margin-bottom: 30px; margin-top: 3rem; margin-bottom: 3rem }
 .margin-light,
-.margin-box-light   { margin: 15px }
-.margin-top-light   { margin-top: 15px }
-.margin-bottom-light{ margin-bottom: 15px }
-.margin-right-light { margin-right: 15px }
-.margin-left-light  { margin-left: 15px }
-.margin-sides-light { margin-left: 15px; margin-right: 15px }
-.margin-lips-light  { margin-top: 15px; margin-bottom: 15px }
+.margin-box-light   { margin: 15px; margin: 1.5rem }
+.margin-top-light   { margin-top: 15px; margin-top: 1.5rem }
+.margin-bottom-light{ margin-bottom: 15px; margin-bottom: 1.5rem }
+.margin-right-light { margin-right: 15px; margin-right: 1.5rem }
+.margin-left-light  { margin-left: 15px; margin-left: 1.5rem }
+.margin-sides-light { margin-left: 15px; margin-right: 15px; margin-left: 1.5rem; margin-right: 1.5rem }
+.margin-lips-light  { margin-top: 15px; margin-bottom: 15px; margin-top: 1.5rem; margin-bottom: 1.5rem }
 .margin-hard,       
-.margin-box-hard    { margin: 60px }
-.margin-top-hard    { margin-top: 60px }
-.margin-bottom-hard { margin-bottom: 60px }
-.margin-right-hard  { margin-right: 60px }
-.margin-left-hard   { margin-left: 60px }
-.margin-sides-hard  { margin-left: 60px; margin-right: 60px }
-.margin-lips-hard   { margin-top: 60px; margin-bottom: 60px }
+.margin-box-hard    { margin: 60px; margin: 6rem }
+.margin-top-hard    { margin-top: 60px; margin-top: 6rem }
+.margin-bottom-hard { margin-bottom: 60px; margin-bottom: 6rem }
+.margin-right-hard  { margin-right: 60px; margin-right: 6rem }
+.margin-left-hard   { margin-left: 60px; margin-left: 6rem }
+.margin-sides-hard  { margin-left: 60px; margin-right: 60px; margin-left: 6rem; margin-right: 6rem }
+.margin-lips-hard   { margin-top: 60px; margin-bottom: 60px; margin-top: 6rem; margin-bottom: 6rem }
 
-.pull-top           { margin-top: -30px }
-.pull-bottom        { margin-bottom: -30px }
-.pull-right         { margin-right: -30px }
-.pull-left          { margin-left: -30px }
-.pull-top-light     { margin-top: -15px }
-.pull-bottom-light  { margin-bottom: -15px }
-.pull-right-light   { margin-right: -15px }
-.pull-left-light    { margin-left: -15px }
-.pull-top-hard      { margin-top: -60px }
-.pull-bottom-hard   { margin-bottom: -60px }
-.pull-right-hard    { margin-right: -60px }
-.pull-left-hard     { margin-left: -60px }
+.pull-top           { margin-top: -30px; margin-top: -3rem }
+.pull-bottom        { margin-bottom: -30px; margin-bottom: -3rem }
+.pull-right         { margin-right: -30px; margin-right: -3rem }
+.pull-left          { margin-left: -30px; margin-left: -3rem }
+.pull-top-light     { margin-top: -15px; margin-top: -1.5rem }
+.pull-bottom-light  { margin-bottom: -15px; margin-bottom: -1.5rem }
+.pull-right-light   { margin-right: -15px; margin-right: -1.5rem }
+.pull-left-light    { margin-left: -15px; margin-left: -1.5rem }
+.pull-top-hard      { margin-top: -60px; margin-top: -6rem }
+.pull-bottom-hard   { margin-bottom: -60px; margin-bottom: -6rem }
+.pull-right-hard    { margin-right: -60px; margin-right: -6rem }
+.pull-left-hard     { margin-left: -60px; margin-left: -6rem }
 
-.center-box,
-.float-center       { margin-left: auto; margin-right: auto }
-.float-left         { float: left }
-.float-right        { float: right }
+
+.center-box         { margin-left: auto; margin-right: auto }
+.float-none         { float: none !important }
+.float-left         { float: left !important }
+.float-right        { float: right !important }
 
 .round              { border-radius: 50% }
 
-.cols-2 { 
+.cols2 { 
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2
 }
-.cols-3 { 
+.cols3 { 
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3
 }
-.cols-4 { 
-  -webkit-column-count: 4;
-  -moz-column-count: 4;
-  column-count: 4
-}
 
-.ultralight{
+.ultralight {
   font-family: 'HelveticaNeue-UltraLight',
   'Helvetica Neue UltraLight',
   'Helvetica Neue', 
@@ -163,20 +159,20 @@ a{
   font-weight: 100;
   letter-spacing: 1px
 }
-.light   { 
+.light { 
   font-family: "HelveticaNeue-Light", 
   "Helvetica Neue Light", 
   Helvetica, Arial, Roboto, sans-serif;
 }
-.normal  {
+.normal {
   font-family: "Helvetica Neue", 
   Helvetica, Arial, Roboto, sans-serif;
-  font-weight: normal;
+  font-weight: normal
 }
 .bold    {
   font-family: "Helvetica Neue", 
   Helvetica, Arial, Roboto, sans-serif;
-  font-weight: 700;
+  font-weight: 700
 }
 
 .text-right     { text-align: right }
@@ -278,55 +274,15 @@ a{
 .lh12           { line-height: 12px; line-height: 1.2rem }
 .lh10           { line-height: 10px; line-height: 1.0rem }
 
+/* put custom colors in your theme.css */
 .purple         { color: #650360 }
-.violet         { color: #4A0246 }
-.blue           { color: #328FC2 }
-.sky            { color: #3798C7 }
-.cyan           { color: #8BD3F5 }
-.steel          { color: #C0D0D8 }
-.sand           { color: #E8D4A3 }
-.toaster        { color: #5EADB2 }
-.dark-blue      { color: #006899 }
-.whiter,
-.bright         { color: #FFFFFF }
-.white          { color: #F4F4F4 }
-.light-gray     { color: #EEEEEE }
-.gray           { color: #F2F2F2 }
-.grayer,
-.slate          { color: #999999 }
-.dark-gray      { color: #505050 }
-.oldgray        { color: #e7e8e9 }
-.account1       { color: #00A4D9 }
-.account2       { color: #333093 }
-.account3       { color: #A54399 }
-.account4       { color: #00B273 }
 .error          { color: #990000 }
 .success        { color: #2F7215 }
 
 .back-purple    { background: #650360 }
-.back-violet    { background: #4A0246 }
-.back-blue      { background: #328FC2 }
-.back-sky       { background: #3798C7 }
-.back-cyan      { background: #8BD3F5 }
-.back-steel     { background: #C0D0D8 }
-.back-sand      { background: #E8D4A3 }
-.back-toaster   { background: #5EADB2 }
-.back-dark-blue { background: #006899 }
-.back-whiter,
-.back-bright    { background: #FFFFFF }
-.back-white     { background: #F4F4F4 }
-.back-light-gray{ background: #EEEEEE }
-.back-gray      { background: #F2F2F2 }
-.back-grayer,
-.back-slate     { background: #999999 }
-.back-dark-gray { background: #505050 }
-.back-oldgray   { background: #e7e8e9 }
-.back-account1  { background: #00A4D9 }
-.back-account2  { background: #333093 }
-.back-account3  { background: #A54399 }
-.back-account4  { background: #00B273 }
 .back-error     { background: #990000 }
 .back-success   { background: #2F7215 }
+/* end colors */
 
 .normalcase     { text-transform: normal }
 .uppercase      { text-transform: uppercase }
@@ -403,84 +359,154 @@ a{
 
 .contain{
   position: relative;
-  width: 1152px;
-  margin: 0 auto
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
+
+.autopad { list-style: none }
+.autopad > li { padding: 1rem 1.5rem  }
+.autopad > h2 { padding: 1.5rem 0 }
+.autopad > p {  padding-bottom: 1.5rem }
+.autopad > [class*=col-],
+.autopad-light > [class*=col-]{ padding: 3rem; padding-right: 1.5rem; padding-left: 1.5rem; }
+.autopad > [class*=col-]:first-of-type { padding-left: 3rem; }
+.autopad > [class*=col-]:last-of-type { padding-right: 3rem; }
+
 
 [class*=col-]{
   float: left;
-  padding: 15px;
-  padding-left: 0;
-  padding-right: 30px
 }
-
 .row:after,
 .contain:after,
 [class*=col-]:after{ content: "."; display: block; height: 0; overflow: hidden }
-.row [class*=col-]:first-of-type{ padding-left: 0 }
-.row [class*=col-]:last-of-type{ padding-right: 0 }
 [class*=col-] p:first-of-type{ margin-top: 0 }
 
-
-.col-1-1        { width: 100% }
-.col-3-4        { width: 75% }
-.col-1-2, .half { width: 50% }
-.col-1-4, .qtr  { width: 25% }
-.col-1-5, .fifth{ width: 20% ;}
-.col-1-8        { width: 12.5% }
-.col-1-16       { width: 6.25% }
-.col-2-3        { width: 66.66% }
-.col-1-3, .third{ width: 33.33% }
-
-.half,
-.qtr,
-.third,
-.fifth          { float: left }
-
-@media (max-width: 500px) { /* phones */
-
+.contain.row{
+  float: none;
 }
 
-@media (min-width: 0px) and (max-width: 768px) { /* phones and vertical tablets */
+.col-1-1, .full   { width: 100% }
+.col-3-4          { width: 75% }
+.col-1-2, .half   { width: 50% }
+.col-1-4, .quarter{ width: 25% }
+.col-1-5, .fifth  { width: 20% }
+.col-2-5          { width: 40% }
+.col-3-5          { width: 60% }
+.col-4-5          { width: 80% }
+.col-1-8, .eighth { width: 12.5% }
+.col-1-3, .third  { width: 33.33% }
+.col-2-3          { width: 66.66% }
+
+.half, .quarter,
+.third, .fifth,
+.eighth { float: left }
+
+@media (max-width: 500px) { /* phones */
+  html          { font-size: 8px }
   .row{
     overflow: visible;
     float: left;
   }
   .contain      {
     width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px; padding-right: 15px;
+    padding-left: 1.5rem; padding-right: 1.5rem;
     overflow: hidden;
   }
   [class*=col-]{
-    width: 100% !important
+    width: 100% !important;
   }
   .phone,
   .mobile       { display: block !important }
   .desktop      { display: none !important }
 }
 
-@media (min-width: 768px) and (max-width: 1020px) {  /* smaller desktops, and horizontal tablets */
-  .contain      { width: 760px }
+@media (min-width: 0px) and (max-width: 800px) { /* phones and vertical tablets */
+  html          { font-size: 9px }
+  .row{
+    overflow: visible;
+    float: left;
+  }
+  .contain      {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px; padding-right: 15px;
+    padding-left: 1.5rem; padding-right: 1.5rem;
+    overflow: hidden;
+  }
+  [class*=col-]{
+    width: 100% !important;
+  }
+  .phone,
+  .mobile       { display: block !important }
+  .desktop      { display: none !important }
+}
+
+
+@media (min-width: 800px) and (max-width: 1000px) {  /* smaller desktops, and horizontal tablets */
+  html          { font-size: 8px }
+  .contain      { width: 800px }
   .desktop      { display: block }
   .phone,
   .mobile       { display: none }
 }
 
-@media (min-width: 1020px) {
-  .contain      { width: 900px }
+@media (min-width: 1000px) and (max-width: 1200px) {  /* smaller desktops, and horizontal tablets */
+  html          { font-size: 9px }
+  .contain      { width: 1000px }
+  .desktop      { display: block }
+  .phone,
+  .mobile       { display: none }
+}
+
+@media (min-width: 1200px) {
+  html          { font-size: 10px }
+  .contain      { width: 1152px }
   .phone,
   .mobile       { display: none }
 }
 
 @media (min-width: 1400px) {
-  .contain      { width: 1150px }
+  html          { font-size: 11px }
+  .contain      { width: 1400px }
   .phone,
   .mobile       { display: none }
 }
 
 @media (min-width: 1600px) {
-  .contain      { width: 1400px }
+  html          { font-size: 12px }
+  .contain      { width: 1600px }
   .phone,
   .mobile       { display: none }
+}
+
+@media (min-width: 0px) {
+  html.unadapt          { font-size: 10px !important }
+  html.unadapt .contain { width: 980px !important }
+  html.unadapt .row     { width: 100% !important; float: left !important }
+  html.unadapt .desktop { display: block !important }
+  html.unadapt .phone,
+  html.unadapt .mobile  { display: none !important }
+  html.unadapt .col-1-1 { width: 100% !important }
+  html.unadapt .col-3-4 { width: 75% !important }
+  html.unadapt .col-1-2,
+  html.unadapt .half    { width: 50% !important }
+  html.unadapt .col-1-4,
+  html.unadapt .quarter { width: 25% !important }
+  html.unadapt .col-1-5,
+  html.unadapt .fifth   { width: 20% !important }
+  html.unadapt .col-2-5 { width: 40% !important }
+  html.unadapt .col-3-5 { width: 60% !important }
+  html.unadapt .col-4-5 { width: 80% !important }
+  html.unadapt .col-1-8 { width: 12.5% !important }
+  html.unadapt .col-1-16{ width: 6.25% !important }
+  html.unadapt .col-2-3 { width: 66.66% !important }
+  html.unadapt .col-1-3,
+  html.unadapt .third   { width: 33.33% !important }
 }
