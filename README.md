@@ -428,12 +428,12 @@ The idea with OOCSS is to write rules with low specificity that can be stacked (
 
 Notes
 ================
-Basicss comes stock with 4 breakpoints...
+Basicss comes stock with five breakpoints:
 
 Fluid:
  - Phones and Tablets (0 - 800px) 
 
-Hard breakpoints: 
+Hard breakpoints for proportions: 
  - Desktops under 1000px (800px - 1000px)
  - Desktops over 1200px
  - Desktops over 1400px
