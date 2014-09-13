@@ -467,7 +467,7 @@ img{
 
 @media (min-width: 1200px) {
   html          { font-size: 10px }
-  .contain      { width: 1152px }
+  .contain      { width: 1200px }
   .phone,
   .mobile       { display: none }
 }
