@@ -10,7 +10,7 @@
 
   Version: basi.css actual
   Author: Chris Chambers
-  version: 3 [09.13.1]
+  version: 3.1 [11.5.2014]
 /
 */
 
@@ -19,6 +19,7 @@
 *:after{
   padding: 0;
   margin: 0;
+  outline: 0;
   box-sizing: inherit;
 }
 
@@ -59,14 +60,16 @@ img{
 .relative        { display: block; position: relative }
 .fixed           { display: block; position: fixed }
 .static          { display: block; position: static }
-.clear           { clear: both; overflow: hidden }
+.clear           { clear: both; overflow: hidden; zoom: 1 }
+.clear:before,
+.clear:after    { content: "."; display: block; height: 0; overflow: hidden; clear: both }
+
 .overhide        { overflow: hidden !important }
 .overshow        { overflow: visible !important }
 .sub-layer       { position: relative; z-index: -1 }
 .back-layer      { position: relative; z-index: 1 }
 .middle-layer    { position: relative; z-index: 2 }
 .front-layer     { position: relative; z-index: 3 }
-
 
 .no-pad             { padding: 0 !important }
 .pad,   
@@ -132,17 +135,10 @@ img{
 .pull-right-hard    { margin-right: -60px; margin-right: -6rem }
 .pull-left-hard     { margin-left: -60px; margin-left: -6rem }
 
-
 .center-box         { margin-left: auto; margin-right: auto }
 .float-none         { float: none !important }
 .float-left         { float: left !important }
 .float-right        { float: right !important }
-.float-center { 
-  position: absolute;
-  top: 50%;
-  left: 50%; 
-  transform: translatex(-50%) translatey(-50%)
-}
 
 .round              { border-radius: 50% }
 
@@ -175,7 +171,7 @@ img{
   Helvetica, Arial, Roboto, sans-serif;
   font-weight: normal
 }
-.bold {
+.bold    {
   font-family: "Helvetica Neue", 
   Helvetica, Arial, Roboto, sans-serif;
   font-weight: 700
@@ -297,9 +293,6 @@ img{
 .strike         { text-decoration: line-through }
 .italic         { font-style: italic }
 
-.clear:before,
-.clear:after    { content: "."; display: block; height: 0; overflow: hidden; clear: both }
-.clear          { zoom: 1 }
 
 .flex  {
   display: -webkit-box;
@@ -343,40 +336,38 @@ img{
   flex-basis: auto
 }
 
-.order-0 { order: 0; -ms-box-ordinal: 0 }
-.order-1 { order: 1; -ms-box-ordinal: 1 }
-.order-2 { order: 2; -ms-box-ordinal: 2 }
-.order-3 { order: 3; -ms-box-ordinal: 3 }
-.order-4 { order: 4; -ms-box-ordinal: 4 }
-.order-5 { order: 5; -ms-box-ordinal: 5 }
-.order-6 { order: 6; -ms-box-ordinal: 6 }
-.order-7 { order: 7; -ms-box-ordinal: 7 }
-.order-8 { order: 8; -ms-box-ordinal: 8 }
-.order-9 { order: 9; -ms-box-ordinal: 9 }
+.order-0{ order: 0; -ms-box-ordinal: 0 }
+.order-1{ order: 1; -ms-box-ordinal: 1 }
+.order-2{ order: 2; -ms-box-ordinal: 2 }
+.order-3{ order: 3; -ms-box-ordinal: 3 }
+.order-4{ order: 4; -ms-box-ordinal: 4 }
+.order-5{ order: 5; -ms-box-ordinal: 5 }
+.order-6{ order: 6; -ms-box-ordinal: 6 }
+.order-7{ order: 7; -ms-box-ordinal: 7 }
+.order-8{ order: 8; -ms-box-ordinal: 8 }
+.order-9{ order: 9; -ms-box-ordinal: 9 }
 
-.flex.grid { flex-grow: 1 }
+.flex.grid    { flex-grow: 1 }
 
-.flex-item.single { flex-grow: 0 }
-.flex-item.double { flex-grow: 1 }
-.flex-item.triple { flex-grow: 2 }
+.flex-item.single  { flex-grow: 0 }
+.flex-item.double  { flex-grow: 1 }
+.flex-item.triple  { flex-grow: 2 }
 
-.row { width: 100%; float: left }
+
+.row      { width: 100%; float: left }
 
 .contain{
-  position: relative;
-  width: 980px;
+  width: 100rem;
   margin-left: auto;
   margin-right: auto;
 }
-
-
 
 .autopad { list-style: none }
 .autopad > li { padding: 1rem 1.5rem  }
 .autopad > h2 { padding: 1.5rem 0 }
 .autopad > p {  padding-bottom: 1.5rem }
 .autopad > [class*=col-],
-.autopad-light > [class*=col-]{ padding: 3rem; padding-right: 1.5rem; padding-left: 1.5rem; }
+.autopad-light > [class*=col-]{ padding: 1.5rem; padding-right: 1.5rem; padding-left: 1.5rem; }
 .autopad > [class*=col-]:first-of-type { padding-left: 3rem; }
 .autopad > [class*=col-]:last-of-type { padding-right: 3rem; }
 
@@ -426,8 +417,8 @@ img{
   [class*=col-]{
     width: 100% !important;
   }
-  .phone,
-  .mobile       { display: block !important }
+  .touch,
+  .phone        { display: block !important }
   .desktop      { display: none !important }
 }
 
@@ -448,47 +439,47 @@ img{
   [class*=col-]{
     width: 100% !important;
   }
-  .phone,
-  .mobile       { display: block !important }
+  .touch,
+  .phone        { display: block !important }
   .desktop      { display: none !important }
 }
 
 
 @media (min-width: 800px) and (max-width: 1000px) {  /* smaller desktops, and horizontal tablets */
   html          { font-size: 8px }
-  .contain      { width: 800px }
+  /*.contain      { width: 800px }*/
   .desktop      { display: block }
-  .phone,
-  .mobile       { display: none }
+  .touch,
+  .phone        { display: none }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {  /* smaller desktops, and horizontal tablets */
   html          { font-size: 9px }
-  .contain      { width: 1000px }
+  /*.contain      { width: 980px }*/
   .desktop      { display: block }
-  .phone,
-  .mobile       { display: none }
+  .touch,
+  .phone        { display: none }
 }
 
 @media (min-width: 1200px) {
   html          { font-size: 10px }
-  .contain      { width: 1200px }
-  .phone,
-  .mobile       { display: none }
+  /*.contain      { width: 1152px }*/
+  .touch,
+  .phone        { display: none }
 }
 
 @media (min-width: 1400px) {
   html          { font-size: 11px }
-  .contain      { width: 1400px }
-  .phone,
-  .mobile       { display: none }
+  /*.contain      { width: 1400px }*/
+  .touch,
+  .phone        { display: none }
 }
 
 @media (min-width: 1600px) {
   html          { font-size: 12px }
-  .contain      { width: 1600px }
-  .phone,
-  .mobile       { display: none }
+  /*.contain      { width: 1600px }*/
+  .touch,
+  .phone        { display: none }
 }
 
 @media (min-width: 0px) {
@@ -497,7 +488,8 @@ img{
   html.unadapt .row     { width: 100% !important; float: left !important }
   html.unadapt .desktop { display: block !important }
   html.unadapt .phone,
-  html.unadapt .mobile  { display: none !important }
+  html.unadapt .touch,
+  .phone  { display: none !important }
   html.unadapt .col-1-1 { width: 100% !important }
   html.unadapt .col-3-4 { width: 75% !important }
   html.unadapt .col-1-2,
