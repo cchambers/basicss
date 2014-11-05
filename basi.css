@@ -137,6 +137,12 @@ img{
 .float-none         { float: none !important }
 .float-left         { float: left !important }
 .float-right        { float: right !important }
+.float-center { 
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translatex(-50%) translatey(-50%)
+}
 
 .round              { border-radius: 50% }
 
@@ -169,7 +175,7 @@ img{
   Helvetica, Arial, Roboto, sans-serif;
   font-weight: normal
 }
-.bold    {
+.bold {
   font-family: "Helvetica Neue", 
   Helvetica, Arial, Roboto, sans-serif;
   font-weight: 700
@@ -337,25 +343,24 @@ img{
   flex-basis: auto
 }
 
-.order-0{ order: 0; -ms-box-ordinal: 0 }
-.order-1{ order: 1; -ms-box-ordinal: 1 }
-.order-2{ order: 2; -ms-box-ordinal: 2 }
-.order-3{ order: 3; -ms-box-ordinal: 3 }
-.order-4{ order: 4; -ms-box-ordinal: 4 }
-.order-5{ order: 5; -ms-box-ordinal: 5 }
-.order-6{ order: 6; -ms-box-ordinal: 6 }
-.order-7{ order: 7; -ms-box-ordinal: 7 }
-.order-8{ order: 8; -ms-box-ordinal: 8 }
-.order-9{ order: 9; -ms-box-ordinal: 9 }
+.order-0 { order: 0; -ms-box-ordinal: 0 }
+.order-1 { order: 1; -ms-box-ordinal: 1 }
+.order-2 { order: 2; -ms-box-ordinal: 2 }
+.order-3 { order: 3; -ms-box-ordinal: 3 }
+.order-4 { order: 4; -ms-box-ordinal: 4 }
+.order-5 { order: 5; -ms-box-ordinal: 5 }
+.order-6 { order: 6; -ms-box-ordinal: 6 }
+.order-7 { order: 7; -ms-box-ordinal: 7 }
+.order-8 { order: 8; -ms-box-ordinal: 8 }
+.order-9 { order: 9; -ms-box-ordinal: 9 }
 
-.flex.grid    { flex-grow: 1 }
+.flex.grid { flex-grow: 1 }
 
-.flex-item.single  { flex-grow: 0 }
-.flex-item.double  { flex-grow: 1 }
-.flex-item.triple  { flex-grow: 2 }
+.flex-item.single { flex-grow: 0 }
+.flex-item.double { flex-grow: 1 }
+.flex-item.triple { flex-grow: 2 }
 
-
-.row      { width: 100%; float: left }
+.row { width: 100%; float: left }
 
 .contain{
   position: relative;
