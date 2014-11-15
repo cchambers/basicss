@@ -407,30 +407,13 @@ img {
 .col-1-3 { width: 33.33% }
 .col-2-3 { width: 66.66% }
 
-@media (max-width: 500px) { /* phones */
-  html          { font-size: 8px }
-  .row{
-    overflow: visible;
-    float: left;
-  }
-  .contain      {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px; padding-right: 15px;
-    padding-left: 1.5rem; padding-right: 1.5rem;
-    overflow: hidden;
-  }
-  [class*=col-]{
-    width: 100% !important;
-  }
-  .touch,
-  .phone        { display: block !important }
-  .desktop      { display: none !important }
-}
 
 @media (max-width: 500px) { /* phones */
-  html          { font-size: 8px }
+  html          { font-size: 10px }
+}
+
+@media (min-width: 0px) and (max-width: 800px) { 
+  html          { font-size: 9px }
   .row{
     overflow: visible;
     float: left;
@@ -446,36 +429,16 @@ img {
   .row > [class*=col-]{
     width: 100% !important;
   }
-  .touch,.phone        { display: block !important }
-  .desktop      { display: none !important }
-}
-
-@media (min-width: 0px) and (max-width: 800px) { /* phones and vertical tablets */
-  html          { font-size: 9px }
-  .row{
-    overflow: visible;
-    float: left;
-  }
-  .contain      {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px; padding-right: 15px;
-    padding-left: 1.5rem; padding-right: 1.5rem;
-    overflow: hidden;
-  }
-  [class*=col-]{
-    width: 100% !important;
-  }
-  .touch,.phone        { display: block !important }
+  .touch,
+  .phone        { display: block !important }
   .desktop      { display: none !important }
 }
 
 
-@media (min-width: 800px) {  /* smaller desktops, and horizontal tablets */
+@media (min-width: 800px) {  
   html          { font-size: 7px }
   .desktop      { display: block }
-  .touch,.phone        { display: none }
+  .touch,.phone { display: none }
 }
 
 @media (min-width: 950px) { 
