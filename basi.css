@@ -146,12 +146,12 @@ img {
 
 .round              { border-radius: 50% }
 
-.cols2 { 
+.cols-2 { 
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2
 }
-.cols3 { 
+.cols-3 { 
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3
@@ -390,20 +390,18 @@ img {
 [class*=col-]:after{ content: "."; display: block; height: 0; overflow: hidden }
 [class*=col-] p:first-of-type{ margin-top: 0 }
 
-.contain.row{
-  float: none;
-}
-
 .col-1-1 { width: 100% }
 .col-3-4 { width: 75% }
 .col-1-2 { width: 50% }
 .col-1-4 { width: 25% }
 .col-1-5 { width: 20% }
-.col-1-6 { width: 16.66% }
 .col-2-5 { width: 40% }
 .col-3-5 { width: 60% }
 .col-4-5 { width: 80% }
+.col-1-6 { width: 16.66% }
+.col-5-6 { width: 83.33% }
 .col-1-8 { width: 12.5% }
+.col-3-8 { width: 37.5% }
 .col-1-3 { width: 33.33% }
 .col-2-3 { width: 66.66% }
 
