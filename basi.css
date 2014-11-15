@@ -30,7 +30,6 @@ html {
 }
 
 body { 
-  background: #151515;
   font-size: 1.6rem;
   font-size: 16px; 
   font-family: "HelveticaNeue-Light", 
@@ -38,7 +37,7 @@ body {
   Helvetica, Arial, Roboto, sans-serif;
 }
 
-img{
+img {
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -67,7 +66,7 @@ img{
 .static          { display: block; position: static }
 .clear           { clear: both; overflow: hidden; zoom: 1 }
 .clear:before,
-.clear:after    { content: "."; display: block; height: 0; overflow: hidden; clear: both }
+.clear:after     { content: "."; display: block; height: 0; overflow: hidden; clear: both }
 
 .overhide        { overflow: hidden !important }
 .overshow        { overflow: visible !important }
@@ -507,22 +506,17 @@ img{
   html.unadapt .row     { width: 100% !important; float: left !important }
   html.unadapt .desktop { display: block !important }
   html.unadapt .phone,
-  html.unadapt .touch,
-  .phone  { display: none !important }
+  html.unadapt .touch   { display: none !important }
   html.unadapt .col-1-1 { width: 100% !important }
   html.unadapt .col-3-4 { width: 75% !important }
-  html.unadapt .col-1-2,
-  html.unadapt .half    { width: 50% !important }
-  html.unadapt .col-1-4,
-  html.unadapt .quarter { width: 25% !important }
-  html.unadapt .col-1-5,
-  html.unadapt .fifth   { width: 20% !important }
+  html.unadapt .col-1-2 { width: 50% !important }
+  html.unadapt .col-1-4 { width: 25% !important }
+  html.unadapt .col-1-5 { width: 20% !important }
   html.unadapt .col-2-5 { width: 40% !important }
   html.unadapt .col-3-5 { width: 60% !important }
   html.unadapt .col-4-5 { width: 80% !important }
   html.unadapt .col-1-8 { width: 12.5% !important }
   html.unadapt .col-1-16{ width: 6.25% !important }
   html.unadapt .col-2-3 { width: 66.66% !important }
-  html.unadapt .col-1-3,
-  html.unadapt .third   { width: 33.33% !important }
+  html.unadapt .col-1-3 { width: 33.33% !important }
 }
