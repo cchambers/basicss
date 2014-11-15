@@ -1,3 +1,49 @@
+.purple         { color: #650360 }
+.violet         { color: #4A0246 }
+.blue           { color: #328FC2 }
+.sky            { color: #86B1C5 }
+.cyan           { color: #8BD3F5 }
+.steel          { color: #C0D0D8 }
+.sand           { color: #E8D4A3 }
+.toaster        { color: #5EADB2 }
+.dark-blue      { color: #006899 }
+.whiter,
+.bright         { color: #FFFFFF }
+.white          { color: #F4F4F4 }
+.light-gray     { color: #EEEEEE }
+.gray           { color: #F2F2F2 }
+.grayer,
+.slate          { color: #999999 }
+.dark-gray      { color: #505050 }
+.oldgray,
+.old-gray       { color: #e7e8e9 }
+.account1       { color: #00A4D9 }
+.account2       { color: #333093 }
+.account3       { color: #A54399 }
+.account4       { color: #00B273 }
+
+.back-violet    { background: #4A0246 }
+.back-blue      { background: #328FC2 }
+.back-sky       { background: #86B1C5 }
+.back-cyan      { background: #8BD3F5 }
+.back-steel     { background: #C0D0D8 }
+.back-sand      { background: #E8D4A3 }
+.back-toaster   { background: #5EADB2 }
+.back-dark-blue { background: #006899 }
+.back-whiter,
+.back-bright    { background: #FFFFFF }
+.back-white     { background: #F4F4F4 }
+.back-light-gray{ background: #EEEEEE }
+.back-gray      { background: #F2F2F2 }
+.back-grayer,
+.back-slate     { background: #999999 }
+.back-dark-gray { background: #505050 }
+.back-oldgray   { background: #e7e8e9 }
+.back-account1  { background: #00A4D9 }
+.back-account2  { background: #333093 }
+.back-account3  { background: #A54399 }
+.back-account4  { background: #00B273 }
+
 /*
                                             $$\ 
                                             $$ |
@@ -45,13 +91,27 @@
   font-family: "allycons";
   src:url('/resources/pres/marketing/allyconsEOT.eot?ser4z8');
   src:url('/resources/pres/marketing/allyconsEOT.eot?#iefix') format('embedded-opentype'),
-    url('/resources/pres/marketing/allyconsWOFF.woff?ser4z8') format('woff'),
-    url('/resources/pres/marketing/allyconsTTF.ttf?ser4z8') format('truetype'),
-    url('/resources/pres/marketing/allyconsSVG.svg?ser4z8') format('svg');
+  url('/resources/pres/marketing/allyconsWOFF.woff?ser4z8') format('woff'),
+  url('/resources/pres/marketing/allyconsTTF.ttf?ser4z8') format('truetype'),
+  url('/resources/pres/marketing/allyconsSVG.svg?ser4z8#allycons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'allycons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-no-min:before {
   content: "\e62f";
@@ -198,7 +258,6 @@
   content: "\e623";
 }
 
-
 /*                                $$\                     
                                   $$ |                    
      $$$$$$\   $$$$$$$\ $$\   $$\ $$ |$$\   $$\  $$$$$$$\ 
@@ -207,7 +266,6 @@
     $$ |  $$ |$$ |      $$ |  $$ |$$ |$$ |  $$ | \____$$\ 
     \$$$$$$  |\$$$$$$$\ \$$$$$$  |$$ |\$$$$$$  |$$$$$$$  |
      \______/  \_______| \______/ \__| \______/ \_______/ 
-
  */
 
  .oculus.on,
@@ -227,9 +285,9 @@
 
  .oculus .content{
   position: relative;
-  padding: 50px;
+  padding: 0;
   z-index: 1001;
-  max-width: 620px;
+  max-width: 62rem;
   margin: auto;
   margin-top: 100px;
  }
