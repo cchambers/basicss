@@ -1,13 +1,16 @@
-Introduction to Basicss
+Introduction
 =======================
 Basicss is an object-oriented CSS framework; little bits of re-usable code make creating complex websites simple. The real beauty of this type of CSS is that the rules explain themselves. I will break down each group of rules that are included in the following sections.
 
 ### Changelog: 
-v3 - Padding removed entirely from grid to encourage nesting. 
+v3 - Padding removed entirely from grid to encourage nesting.
+v3.2 - Tweaked nesting to allow for non-stretching columns.
 
 OOCSS
 -----
 ### Trigger Classes 
+
+These classes are generally used to preload a class with properties that will be change eventually via a JavaScript Timer or some other event on the page.
 
     .fill            { position: absolute; width: 100%; height: 100% }
     .fill-height     { height: 100% }
@@ -24,7 +27,7 @@ OOCSS
     .stage-top       { bottom: 110% !important }
     .stage-bottom    { top: 110% !important }
 
-These classes are generally used to preload a class with properties that will be change eventually via a JavaScript Timer or some other event on the page.
+
 
 ### Positioning  
 
@@ -38,7 +41,7 @@ These classes are generally used to preload a class with properties that will be
     .static          { display: block; position: static }
     .clear           { clear: both; overflow: hidden }
 
-In regards to absolute positioning, just add the *.absolute* class and proceed to add the edge distances in-line.
+In regards to absolute positioning, just add the *.absolute* class and proceed to add the edge distances in-line. 
 
     <div class="absolute back-blue" style="top:100px;left:100px"> 
         I'm absolutely positioned!
@@ -82,7 +85,6 @@ In regards to absolute positioning, just add the *.absolute* class and proceed t
     .pad-bottom-hard    { padding-bottom: 60px; padding-bottom: 6rem }
     .pad-right-hard     { padding-right: 60px; padding-right: 6rem }
     .pad-left-hard      { padding-left: 60px; padding-left: 6rem }
-    .round           { border-radius: 50% }
 
     .margin,    
     .margin-box         { margin: 30px; margin: 3rem }
@@ -123,12 +125,12 @@ In regards to absolute positioning, just add the *.absolute* class and proceed t
     .pull-left-hard     { margin-left: -60px; margin-left: -6rem }
 
 #### HTML5 Columns
-    .cols2 { 
+    .cols-2 { 
       -webkit-column-count: 2;
       -moz-column-count: 2;
       column-count: 2
     }
-    .cols3 { 
+    .cols-3 { 
       -webkit-column-count: 3;
       -moz-column-count: 3;
       column-count: 3
@@ -177,52 +179,52 @@ In regards to absolute positioning, just add the *.absolute* class and proceed t
 }
     
 #### Size
-     .px100          { font-size: 100px; font-size: 10rem }
-     .px98           { font-size: 98px; font-size: 9.8rem }
-     .px96           { font-size: 96px; font-size: 9.6rem }
-     .px94           { font-size: 94px; font-size: 9.4rem }
-     .px92           { font-size: 92px; font-size: 9.2rem }
-     .px90           { font-size: 90px; font-size: 9.0rem }
-     .px88           { font-size: 88px; font-size: 8.8rem }
-     .px86           { font-size: 86px; font-size: 8.6rem }
-     .px84           { font-size: 84px; font-size: 8.4rem }
-     .px82           { font-size: 82px; font-size: 8.2rem }
-     .px80           { font-size: 80px; font-size: 8.0rem }
-     .px78           { font-size: 78px; font-size: 7.8rem }
-     .px76           { font-size: 76px; font-size: 7.6rem }
-     .px74           { font-size: 74px; font-size: 7.4rem }
-     .px72           { font-size: 72px; font-size: 7.2rem }
-     .px70           { font-size: 70px; font-size: 7.0rem }
-     .px68           { font-size: 68px; font-size: 6.8rem }
-     .px66           { font-size: 66px; font-size: 6.6rem }
-     .px64           { font-size: 64px; font-size: 6.4rem }
-     .px62           { font-size: 62px; font-size: 6.2rem }
-     .px60           { font-size: 60px; font-size: 6.0rem }
-     .px58           { font-size: 58px; font-size: 5.8rem }
-     .px56           { font-size: 56px; font-size: 5.6rem }
-     .px54           { font-size: 54px; font-size: 5.4rem }
-     .px52           { font-size: 52px; font-size: 5.2rem }
-     .px50           { font-size: 50px; font-size: 5.0rem }
-     .px48           { font-size: 48px; font-size: 4.8rem }
-     .px46           { font-size: 46px; font-size: 4.6rem }
-     .px44           { font-size: 44px; font-size: 4.4rem }
-     .px42           { font-size: 42px; font-size: 4.2rem }
-     .px40           { font-size: 40px; font-size: 4.0rem }
-     .px38           { font-size: 38px; font-size: 3.8rem }
-     .px36           { font-size: 36px; font-size: 3.6rem }
-     .px34           { font-size: 34px; font-size: 3.4rem }
-     .px32           { font-size: 32px; font-size: 3.2rem }
-     .px30           { font-size: 30px; font-size: 3.0rem }
-     .px28           { font-size: 28px; font-size: 2.8rem }
-     .px26           { font-size: 26px; font-size: 2.6rem }
-     .px24           { font-size: 24px; font-size: 2.4rem }
-     .px22           { font-size: 22px; font-size: 2.2rem }
-     .px20           { font-size: 20px; font-size: 2.0rem }
-     .px18           { font-size: 18px; font-size: 1.8rem }
-     .px16           { font-size: 16px; font-size: 1.6rem }
-     .px14           { font-size: 14px; font-size: 1.4rem }
-     .px12           { font-size: 12px; font-size: 1.2rem }
-     .px10           { font-size: 10px; font-size: 1.0rem }
+    .px100          { font-size: 100px; font-size: 10rem }
+    .px98           { font-size: 98px; font-size: 9.8rem }
+    .px96           { font-size: 96px; font-size: 9.6rem }
+    .px94           { font-size: 94px; font-size: 9.4rem }
+    .px92           { font-size: 92px; font-size: 9.2rem }
+    .px90           { font-size: 90px; font-size: 9.0rem }
+    .px88           { font-size: 88px; font-size: 8.8rem }
+    .px86           { font-size: 86px; font-size: 8.6rem }
+    .px84           { font-size: 84px; font-size: 8.4rem }
+    .px82           { font-size: 82px; font-size: 8.2rem }
+    .px80           { font-size: 80px; font-size: 8.0rem }
+    .px78           { font-size: 78px; font-size: 7.8rem }
+    .px76           { font-size: 76px; font-size: 7.6rem }
+    .px74           { font-size: 74px; font-size: 7.4rem }
+    .px72           { font-size: 72px; font-size: 7.2rem }
+    .px70           { font-size: 70px; font-size: 7.0rem }
+    .px68           { font-size: 68px; font-size: 6.8rem }
+    .px66           { font-size: 66px; font-size: 6.6rem }
+    .px64           { font-size: 64px; font-size: 6.4rem }
+    .px62           { font-size: 62px; font-size: 6.2rem }
+    .px60           { font-size: 60px; font-size: 6.0rem }
+    .px58           { font-size: 58px; font-size: 5.8rem }
+    .px56           { font-size: 56px; font-size: 5.6rem }
+    .px54           { font-size: 54px; font-size: 5.4rem }
+    .px52           { font-size: 52px; font-size: 5.2rem }
+    .px50           { font-size: 50px; font-size: 5.0rem }
+    .px48           { font-size: 48px; font-size: 4.8rem }
+    .px46           { font-size: 46px; font-size: 4.6rem }
+    .px44           { font-size: 44px; font-size: 4.4rem }
+    .px42           { font-size: 42px; font-size: 4.2rem }
+    .px40           { font-size: 40px; font-size: 4.0rem }
+    .px38           { font-size: 38px; font-size: 3.8rem }
+    .px36           { font-size: 36px; font-size: 3.6rem }
+    .px34           { font-size: 34px; font-size: 3.4rem }
+    .px32           { font-size: 32px; font-size: 3.2rem }
+    .px30           { font-size: 30px; font-size: 3.0rem }
+    .px28           { font-size: 28px; font-size: 2.8rem }
+    .px26           { font-size: 26px; font-size: 2.6rem }
+    .px24           { font-size: 24px; font-size: 2.4rem }
+    .px22           { font-size: 22px; font-size: 2.2rem }
+    .px20           { font-size: 20px; font-size: 2.0rem }
+    .px18           { font-size: 18px; font-size: 1.8rem }
+    .px16           { font-size: 16px; font-size: 1.6rem }
+    .px14           { font-size: 14px; font-size: 1.4rem }
+    .px12           { font-size: 12px; font-size: 1.2rem }
+    .px10           { font-size: 10px; font-size: 1.0rem }
     
 #### Case
     .normalcase     { text-transform: normal }
@@ -284,7 +286,7 @@ In regards to absolute positioning, just add the *.absolute* class and proceed t
     
 Flexbox 
 -------
-Flexbox is supported in most modern browsers, but implemented in too many ways to even try to remember.
+Flexbox is supported in most modern browsers, but implemented in too many ways to even try to remember. Here, I've tried to give some more semantic meaning to the confusing property soup that is flexbox.
 
 ### Flex Container
     .flex  {
@@ -325,7 +327,7 @@ The default setting is "nowrap", but if you want your elements to break to anoth
     .flex.top        { align-content: flex-start; -ms-flex-align: start }
     .flex.bottom     { align-content: flex-end; -ms-flex-align: end }
     .flex.middle     { align-content: center; -ms-flex-align: center }
-    .flex.fill       { align-content: stretch; -ms-flex-align: stretch }
+    .flex.stretch    { align-content: stretch; -ms-flex-align: stretch }
     .flex.content    { align-content: baseline; -ms-flex-align: baseline }
 
 
@@ -335,12 +337,18 @@ The default setting is "nowrap", but if you want your elements to break to anoth
        flex-shrink:.5;
        flex-basis: auto
      }
+
+     .flex-item.top    { align-self: flex-start; }
+     .flex-item.bottom { align-self: flex-end; }
+     .flex-item.middle { align-self: center; }
+     .flex-item.stretch{ align-self: stretch; }
+     .flex-item.content{ align-self: baselinet; }
      
 #### Flex Item Modifications
-    
     .flex-item.single  { flex-grow: 0 }
     .flex-item.double  { flex-grow: 1 }
     .flex-item.triple  { flex-grow: 2 }
+
 Flex items are allowed to grow relative to their width. So, a *.single* with a width setting of 200px would grow no larger than 200px, while a *.double* flex-item could grow to 400px, etc.
     
     .order-0{ order: 0; -ms-box-ordinal: 0 }
@@ -390,60 +398,54 @@ And here is our grid:
 
 These three elements make up our grid. Each set of columns belong in a *.row*. Any content that needs to be constrained to the center of the page is wrapped with a *.container*. 
 
-    .col-1-1, .full   { width: 100% }
-    .col-3-4          { width: 75% }
-    .col-1-2, .half   { width: 50% }
-    .col-1-4, .quarter{ width: 25% }
-    .col-1-5, .fifth  { width: 20% }
-    .col-2-5          { width: 40% }
-    .col-3-5          { width: 60% }
-    .col-4-5          { width: 80% }
-    .col-1-8, .eighth { width: 12.5% }
-    .col-1-3, .third  { width: 33.33% }
-    .col-2-3          { width: 66.66% }
+    .col-1-1 { width: 100% }
+    .col-3-4 { width: 75% }
+    .col-1-2 { width: 50% }
+    .col-1-4 { width: 25% }
+    .col-1-5 { width: 20% }
+    .col-2-5 { width: 40% }
+    .col-3-5 { width: 60% }
+    .col-4-5 { width: 80% }
+    .col-1-6 { width: 16.66% }
+    .col-5-6 { width: 83.33% }
+    .col-1-8 { width: 12.5% }
+    .col-3-8 { width: 37.5% }
+    .col-1-3 { width: 33.33% }
+    .col-2-3 { width: 66.66% }
 
-Super simple responsive grid. The column widths are denoted by fractions: 1-2 is 1/2, and 1-4 is 1/4, etc. You can use any combination of these to fill out a row. Careful planning with rows/columns can make transitions between breakpoints seamless.
+Super simple responsive grid. The column widths are denoted by fractions: 1-2 is 1/2, and 1-4 is 1/4, etc. You can use any combination of these to fill out a row. Careful planning with rows/columns can make transitions between breakpoints seamless... 
 
-The secondary grid definitions are not responsive to the layout... i.e, they will remain at their pre-defined width at any viewport size.
+Only columns within rows will flex to 100% at 800px wide. Nesting columns within columns allows for better content control on smaller devices. 
 
-----------
-
-There are a few abbreviated grid classes that are not affected by the media queries. They are...
-    .half, .third, .qtr, .fifth
 
 How to use Basicss
 ==================
 The idea with OOCSS is to write rules with low specificity that can be stacked (or cascaded) on top of each other. It is like having a pantry full of ingredients and the recipe is up to you. 
 
-    <div class="row px16 lh20">
+    <div class="row">
         <div class="col-1-2">
-            <p class="purple">
+            <p class="purple px16 lh20">
                 Some paragraph lorem ipsum.
             </p>
         </div>
-        <div class="col-1-2 back-blue pad">
-            <img src="path.jpg" />
+        <div class="col-1-2">
+            <div class="back-blue pad">
+                <img src="path.jpg" />
+            </div>
         </div>
     </div>
 
 Notes
 ================
-Basicss comes stock with five breakpoints:
+Basicss has multiple media query breakpoints used in scaling the site's content:
 
-Fluid:
- - Phones and Tablets (0 - 800px) 
+- < 500px: (small phones)
+- < 800px: (large handhelds)
+- > 800px: 70% scaled (small desktops and horizontal handhelds)
+- < 950px: 80% scaled
+- < 1050p: 90% scaled
+- < 1200px: 100%, not scaled ("median" for designs)
+- <
 
-Hard breakpoints for proportions: 
- - Desktops under 1000px (800px - 1000px)
- - Desktops over 1200px
- - Desktops over 1400px
- - Desktops over 1600px
- 
-... and two content switches...
-
- - .mobile
- - .desktop
-
-... that can be used to control the visibility of different elements depending on breakpoints. An element with the ".phone" class would only show to a phone.
-
+... and there are two classes for turning on/off elements between "touch" and "desktop" configurations: `.touch` and `.desktop`.
 
