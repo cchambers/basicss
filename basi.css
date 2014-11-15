@@ -322,11 +322,11 @@ img {
 .flex.nowrap     { flex-wrap: nowrap; -ms-flex-wrap: nowrap }
 .flex.wrap-rev   { flex-wrap: wrap-reverse; -ms-flex-wrap: wrap-reverse }
 
-.flex.top        { justify-content: flex-start; -ms-flex-pack: start }
-.flex.bottom     { justify-content: flex-end; -ms-flex-pack: end }
-.flex.middle     { justify-content: center; -ms-flex-pack: center }
-.flex.fill       { justify-content: space-between; -ms-flex-pack: justify }
-.flex.content    { justify-content: space-around; -ms-flex-pack: justify }
+.flex.start      { justify-content: flex-start; -ms-flex-pack: start }
+.flex.end        { justify-content: flex-end; -ms-flex-pack: end }
+.flex.center     { justify-content: center; -ms-flex-pack: center }
+.flex.between    { justify-content: space-between; -ms-flex-pack: justify }
+.flex.around     { justify-content: space-around; -ms-flex-pack: justify }
 
 .flex.top        { align-content: flex-start; -ms-flex-align: start }
 .flex.bottom     { align-content: flex-end; -ms-flex-align: end }
@@ -338,13 +338,14 @@ img {
   flex-grow: 0;
   flex-shrink: .5;
   flex-basis: auto;
+  align-self: flex-start;
 }
 
-.flex-item.start    { align-self: flex-start; }
-.flex-item.end      { align-self: flex-end; }
-.flex-item.center   { align-self: center; }
-.flex-item.baseline { align-self: baselinet; }
-.flex-item.stretch  { align-self: stretch; }
+.flex-item.top    { align-self: flex-start; }
+.flex-item.bottom { align-self: flex-end; }
+.flex-item.middle { align-self: center; }
+.flex-item.fill   { align-self: stretch; }
+.flex-item.content{ align-self: baselinet; }
 
 .order-0 { order: 0; -ms-box-ordinal: 0 }
 .order-1 { order: 1; -ms-box-ordinal: 1 }
