@@ -327,18 +327,22 @@ img {
 .flex.center     { justify-content: center; -ms-flex-pack: center }
 .flex.between    { justify-content: space-between; -ms-flex-pack: justify }
 .flex.around     { justify-content: space-around; -ms-flex-pack: justify }
+.flex.stretch    { justify-content: stretch; -ms-flex-pack: stretch }
 
-.flex.top        { align-content: flex-start; -ms-flex-align: start }
-.flex.bottom     { align-content: flex-end; -ms-flex-align: end }
-.flex.middle     { align-content: center; -ms-flex-align: center }
-.flex.stretch    { align-content: stretch; -ms-flex-align: stretch }
-.flex.content    { align-content: baseline; -ms-flex-align: baseline }
+.flex.top        { align-items: flex-start; -ms-flex-align: start }
+.flex.bottom     { align-items: flex-end; -ms-flex-align: end }
+.flex.middle     { align-items: center; -ms-flex-align: center }
+.flex.stretch    { align-items: stretch; -ms-flex-align: stretch }
+.flex.content    { align-items: baseline; -ms-flex-align: baseline }
 
-.flex-item {
-  flex-grow: 0;
-  flex-shrink: .5;
-  flex-basis: auto;
-}
+  .flex-item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    -webkit-flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-basis: auto;
+  }
 
 .flex-item.top    { align-self: flex-start; }
 .flex-item.bottom { align-self: flex-end; }
@@ -433,7 +437,7 @@ img {
 }
 
 
-@media (min-width: 800px) {  
+@media (min-width: 805px) {  
   html          { font-size: 7px }
   .desktop      { display: block }
   .touch,.phone { display: none }
