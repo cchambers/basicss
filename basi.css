@@ -335,14 +335,20 @@ img {
 .flex.stretch    { align-items: stretch; -ms-flex-align: stretch }
 .flex.content    { align-items: baseline; -ms-flex-align: baseline }
 
-  .flex-item {
-    flex-grow: 1;
-    flex-shrink: 0;
-    flex-basis: auto;
-    -webkit-flex-grow: 1;
-    -webkit-flex-shrink: 0;
-    -webkit-flex-basis: auto;
-  }
+.flex.cross-top        { align-content: flex-start }
+.flex.cross-bottom     { align-content: flex-end }
+.flex.cross-middle     { align-content: center }
+.flex.cross-stretch    { align-content: stretch }
+.flex.cross-content    { align-content: baseline }
+
+.flex-item {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  -webkit-flex-grow: 0;
+  -webkit-flex-shrink: 0;
+  -webkit-flex-basis: auto;
+}
 
 .flex-item.top    { align-self: flex-start; }
 .flex-item.bottom { align-self: flex-end; }
