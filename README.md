@@ -4,7 +4,6 @@ Basicss is an object-oriented CSS framework; little bits of re-usable code make 
 
 ### Changelog: 
 v3 - Padding removed entirely from grid to encourage nesting.
-v3.2 - Tweaked nesting to allow for non-stretching columns.
 
 OOCSS
 -----
