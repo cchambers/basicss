@@ -451,6 +451,9 @@ img {
   .row > [class*=col-]{
     width: 100% !important;
   }
+  [class*=col-] {
+    margin-left: 0;
+  }
   .touch,
   .phone        { display: block !important }
   .desktop      { display: none !important }
