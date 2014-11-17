@@ -384,12 +384,6 @@ And here is our grid:
 
     .row      { width: 100%; float: left }
     
-    .contain{
-      position: relative;
-      width: 900px;
-      margin: 0 auto
-    }
-    
     [class*=col-]{
       float: left;
       padding: 10px;
