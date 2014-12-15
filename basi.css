@@ -380,6 +380,7 @@ img {
   width: 115rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .autopad { list-style: none }
@@ -451,7 +452,7 @@ img {
   html          { font-size: 10px }
 }
 
-@media (min-width: 0px) and (max-width: 800px) { 
+@media (min-width: 0px) and (max-width: 805px) { 
   html          { font-size: 9px }
   .row{
     overflow: visible;
