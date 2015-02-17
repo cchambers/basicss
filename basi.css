@@ -44,6 +44,11 @@ img {
   border: 0;
 }
 
+ul.no-style { list-style: none }
+ul.disc { list-style: disc }
+ul.square { list-style: squad }
+ul.circle { list-style: circle }
+
 .fill            { position: absolute; width: 100%; height: 100% }
 .fill-height     { height: 100% }
 .fill-width      { width: 100% }
