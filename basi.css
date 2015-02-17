@@ -99,6 +99,14 @@ img {
 .pad-bottom-hard    { padding-bottom: 60px; padding-bottom: 6rem }
 .pad-right-hard     { padding-right: 60px; padding-right: 6rem }
 .pad-left-hard      { padding-left: 60px; padding-left: 6rem }
+.pad-super,
+.pad-box-super       { padding: 120px; padding: 12rem }
+.pad-sides-super     { padding-left: 120px; padding-right: 120px; padding-left: 12rem; padding-right: 12rem }
+.pad-lips-super      { padding-top: 120px; padding-bottom: 120px; padding-top: 12rem; padding-bottom: 12rem }
+.pad-top-super       { padding-top: 120px; padding-top: 12rem }
+.pad-bottom-super    { padding-bottom: 120px; padding-bottom: 12rem }
+.pad-right-super     { padding-right: 120px; padding-right: 12rem }
+.pad-left-super      { padding-left: 120px; padding-left: 12rem }
 
 .margin,    
 .margin-box         { margin: 30px; margin: 3rem }
@@ -124,6 +132,14 @@ img {
 .margin-left-hard   { margin-left: 60px; margin-left: 6rem }
 .margin-sides-hard  { margin-left: 60px; margin-right: 60px; margin-left: 6rem; margin-right: 6rem }
 .margin-lips-hard   { margin-top: 60px; margin-bottom: 60px; margin-top: 6rem; margin-bottom: 6rem }
+.margin-super,       
+.margin-box-super    { margin: 120px; margin: 12rem }
+.margin-top-super    { margin-top: 120px; margin-top: 12rem }
+.margin-bottom-super { margin-bottom: 120px; margin-bottom: 12rem }
+.margin-right-super  { margin-right: 120px; margin-right: 12rem }
+.margin-left-super   { margin-left: 120px; margin-left: 12rem }
+.margin-sides-super  { margin-left: 120px; margin-right: 120px; margin-left: 12rem; margin-right: 12rem }
+.margin-lips-super   { margin-top: 120px; margin-bottom: 120px; margin-top: 12rem; margin-bottom: 12rem }
 
 .pull-top           { margin-top: -30px; margin-top: -3rem }
 .pull-bottom        { margin-bottom: -30px; margin-bottom: -3rem }
@@ -207,6 +223,9 @@ img {
 .text-left      { text-align: left }
 .text-center    { text-align: center }
 .text-justify   { text-align: justify }
+.force-justify  {
+
+}
 
 .px100          { font-size: 100px; font-size: 10rem }
 .px98           { font-size: 98px; font-size: 9.8rem }
