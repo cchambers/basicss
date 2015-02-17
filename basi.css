@@ -223,8 +223,13 @@ img {
 .text-left      { text-align: left }
 .text-center    { text-align: center }
 .text-justify   { text-align: justify }
-.force-justify  {
-
+.force-justify  { text-align: justify }
+.force-justify:after {
+  display: inline-block;
+  width: 100%;
+  content: '.';
+  height: 0;
+  overflow: hidden;
 }
 
 .px100          { font-size: 100px; font-size: 10rem }
