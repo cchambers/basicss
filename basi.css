@@ -10,7 +10,7 @@
 
   basi.css actual
   Author: Chris Chambers
-  Version: 3.4 [01.11.2015]
+  Version: 3.4.1 [02.17.2015]
 /
 */
 
@@ -448,8 +448,6 @@ img {
   }
   .row > [class*=col-]{
     width: 100% !important;
-  }
-  [class*=col-] {
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 0 !important;
