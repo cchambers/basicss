@@ -10,9 +10,14 @@
 
   basi.css actual
   Author: Chris Chambers
-  Version: 3.4.1 [02.17.2015]
+  Version: 3.4.2 [03.15.2015]
 /
 */
+
+@viewport {
+  width: device-width;
+  initial-scale: 1.0;
+}
 
 *,
 *:before,
@@ -49,7 +54,7 @@ ul.disc { list-style: disc }
 ul.square { list-style: squad }
 ul.circle { list-style: circle }
 
-.fill            { position: absolute; width: 100%; height: 100% }
+.fill            { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
 .fill-height     { height: 100% }
 .fill-width      { width: 100% }
 .off             { display: none }
