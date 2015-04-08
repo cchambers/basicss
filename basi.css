@@ -56,6 +56,14 @@ img {
   border: 0;
 }
 
+nav ul {
+  list-style: none;
+}
+
+ul {
+  padding-left: 3rem;
+}
+
 /* OO Classes */
 ul.no-style { list-style: none }
 ul.disc { list-style: disc }
