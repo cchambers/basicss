@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Title</title>
+  <title>Basically a website</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="format-detection" content="telephone=no">
-  <link rel="canonical" content="www.website.com/url-here" />
+  <!--link rel="canonical" content="www.website.com/url-here" /-->
   <link rel="stylesheet" href="https://cdn.rawgit.com/cchambers/basicss/master/basi.css">
   
   <style>
@@ -21,39 +21,91 @@
     }
 
     /* colors */
-    .black { color: #222222 }
+    .coal-black { color: #222222 }
     .blue  { color: #009bff }
-    .green { color: #bada55 }
+    .badass-green { color: #bada55 }
     .white { color: #f2f2f2 }
 
-    .back-black { background-color: #222222 }
+    .back-coal-black { background-color: #222222 }
     .back-blue  { background-color: #009bff }
-    .back-green { background-color: #bada55 }
+    .back-badass-green { background-color: #bada55 }
     .back-white { background-color: #f2f2f2;}
     /* end colors */
     
+
+    /* baseline configuration for 3rem */
+    .baseline30 p,
+    .baseline30 ul,
+    .baseline30 ol {
+      line-height: 3rem;
+      margin-top: 3.9rem;
+      margin-bottom: -.4rem;
+    }
+
+    .baseline30 p + p,
+    .baseline30 ul + ul, 
+    .baseline30 ol + ol {
+      margin-top: 3.4rem
+    }
+
+    .baseline30 p:last-child {
+      margin-bottom: -.9rem;
+    }
+    /* end baseline */
   </style>
 </head>
-<body>
+<body class="baseline30">
   <header class="row back-blue">
     <div class="contain">
       <div class="col-1-2">
-        <h1 class="white px30 lh60">
+        <div class="white px30 lh60">
           Lorem
-        </h1>
+        </div>
       </div>
     </div>    
   </header>
 
   <main class="contain">
-    <article>
-      <header></header>
-      <p></p>
-      <footer></footer>
-    </article>
+    <div class="row pad-top">
+      <article>
+        <header>
+          <h1>
+            Our story continues...
+          </h1>
+        </header>
+        <p>
+          Alice did not quite know what to say to this: so she helped herself  to some tea and bread-and-butter, and then turned to the Dormouse, and  repeated her question. 'Why did they live at the bottom of a well?'
+        </p>
+
+        <p>
+          The Dormouse again took a minute or two to think about it, and then  said, 'It was a treacle-well.'
+        </p>
+
+        <p>
+          'There's no such thing!' Alice was beginning very angrily, but the  Hatter and the March Hare went 'Sh! sh!' and the Dormouse sulkily  remarked, 'If you can't be civil, you'd better finish the story for  yourself.'
+        </p>
+
+        <p>
+          'No, please go on!' Alice said very humbly; 'I won't interrupt again. I  dare say there may be ONE.'
+        </p>
+
+        <p>
+          'One, indeed!' said the Dormouse indignantly. However, he consented to  go on. 'And so these three little sisters—they were learning to draw,  you know—'
+        </p>
+
+        <p>
+          'What did they draw?' said Alice, quite forgetting her promise.
+        </p>
+
+        <p>
+          'Treacle,' said the Dormouse, without considering at all this time.
+        </p>
+        <footer></footer>
+      </article>
+    </div>
   </main>
 
-  <footer class="row back-black">
+  <footer class="row back-coal-black">
     <div class="contain">
       <div class="text-center white lh60">
         This is a great base for any website doler sit amet.
