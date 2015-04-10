@@ -10,7 +10,7 @@
 
   basi.css actual
   Author: Chris Chambers
-  Version: 3.4.4 [04.07.2015]
+  Version: 3.4.5 [04.10.2015]
   Description: This is the core file for the basicss OOCSS framework.
   Contents: 
   - Setup/Reset
@@ -482,7 +482,8 @@ ul.circle { list-style: circle }
 .push-1-3 { margin-left: 33.33% }
 .push-2-3 { margin-left: 66.66% }
 
-@media (min-width: 0px) and (max-width: 800px) { 
+@media (min-width: 0px) and (max-width: 800px),
+screen and (orientation: portrait) { 
   .row {
     overflow: visible;
     float: left;
