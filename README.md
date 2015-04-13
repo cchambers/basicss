@@ -1,9 +1,10 @@
 Introduction
 =======================
-Basicss is an object-oriented CSS framework; little bits of re-usable code make creating complex websites simple. The real beauty of this type of CSS is that the rules explain themselves. I will break down each group of rules that are included in the following sections.
+Basicss is an object-oriented scaling CSS framework. The real beauty of OO CSS is that the classes explain themselves. I will break down each group of rules that are included in the following sections...
 
-### Changelog: 
-v3 - Padding removed entirely from grid to encourage nesting.
+### Major Change Log: 
+v3 - Padding removed entirely from content flow system to encourage nesting.
+v3.4.5 - Added portrait orientation to "touch" breakpoint.
 
 OOCSS
 -----
@@ -365,21 +366,10 @@ Sometimes you may find the need to move a flex-item around in the stack... this 
 
 **Pro-tip:** You can force an element to the front indefinitely by giving it a negative order.
 
-Responsive Grid
+Content Flow Control
 ---------------
 
-As of version 3, this grid is no longer padded by default. Another class has been added to re-enable the default padding on a per-row basis. It has been extended to automatically pad lists and paragraphs:
-
-    .autopad { list-style: none }
-    .autopad > li { padding: 1rem 1.5rem  }
-    .autopad > h2 { padding: 1.5rem 0 }
-    .autopad > p {  padding-bottom: 1.5rem }
-    .autopad > [class*=col-],
-    .autopad-light > [class*=col-]{ padding: 3rem; padding-right: 1.5rem; padding-left: 1.5rem; }
-    .autopad > [class*=col-]:first-of-type { padding-left: 3rem; }
-    .autopad > [class*=col-]:last-of-type { padding-right: 3rem; }
-
-And here is our grid:
+This is not a "grid" -- it is a method of dividing rows into fractions:
 
     .row      { width: 100%; float: left }
     
@@ -428,17 +418,36 @@ The idea with OOCSS is to write rules with low specificity that can be stacked (
         </div>
     </div>
 
-Notes
+Scaling CSS
 ================
-Basicss has multiple media query breakpoints used in scaling the site's content:
+Basicss uses the scaling CSS method of keeping everything where it belongs:
 
-- < 500px: (small phones)
-- < 800px: (large handhelds)
-- > 800px: 70% scaled (small desktops and horizontal handhelds)
-- < 950px: 80% scaled
-- < 1050p: 90% scaled
-- < 1200px: 100%, not scaled ("median" for designs)
-- <
+- < 500px: 90% scaled (small phones)
+- < 800px: 80% scaled (large handhelds)
+- > 800px: 80% scaled (small desktops and horizontal handhelds)
+- < 1000p: 90% scaled
+- < 1100px: 100% scaled
+- < 1200px: 110% scaled
+...
+- ~ 4k: 300% scaled (latest smart televisions and upcoming handhelds)
+
+    @media (min-width: 0px)    { html { font-size: 10px } }
+    @media (min-width: 500px)  { html { font-size: 9px  } }
+    @media (min-width: 800px)  { html { font-size: 8px  } }
+    @media (min-width: 1000px) { html { font-size: 9px  } }
+    @media (min-width: 1100px) { html { font-size: 10px } }
+    @media (min-width: 1200px) { html { font-size: 11px } }
+    @media (min-width: 1300px) { html { font-size: 12px } }
+    @media (min-width: 1400px) { html { font-size: 13px } }
+    @media (min-width: 1500px) { html { font-size: 14px } }
+    @media (min-width: 1600px) { html { font-size: 15px } }
+    @media (min-width: 1800px) { html { font-size: 16px } }
+    @media (min-width: 1900px) { html { font-size: 17px } }
+    @media (min-width: 2000px) { html { font-size: 18px } }
+    @media (min-width: 2100px) { html { font-size: 19px } }
+    @media (min-width: 2200px) { html { font-size: 20px } }
+    @media (min-width: 3200px) { html { font-size: 30px } }
+
 
 ... and there are two classes for turning on/off elements between "touch" and "desktop" configurations: `.touch` and `.desktop`.
 
