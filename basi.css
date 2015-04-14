@@ -10,7 +10,7 @@
 
   basi.css actual
   Author: Chris Chambers
-  Version: 3.4.5 [04.10.2015]
+  Version: 3.4.6 [04.14.2015]
   Description: This is the core file for the basicss OOCSS framework.
   Contents: 
   - Setup/Reset
@@ -534,9 +534,10 @@ screen and (orientation: portrait) {
 }
 
 /* Scaling CSS Configuration */
-@media (min-width: 0px)    { html { font-size: 10px } }
-@media (min-width: 500px)  { html { font-size: 9px  } }
-@media (min-width: 800px)  { html { font-size: 8px  } }
+@media (min-width: 0px)    { html { font-size: 9px } }
+@media (min-width: 500px)  { html { font-size: 8px  } }
+@media (min-width: 800px)  { html { font-size: 7px  } }
+@media (min-width: 900px)  { html { font-size: 8px  } }
 @media (min-width: 1000px) { html { font-size: 9px  } }
 @media (min-width: 1100px) { html { font-size: 10px } }
 @media (min-width: 1200px) { html { font-size: 11px } }
@@ -544,9 +545,19 @@ screen and (orientation: portrait) {
 @media (min-width: 1400px) { html { font-size: 13px } }
 @media (min-width: 1500px) { html { font-size: 14px } }
 @media (min-width: 1600px) { html { font-size: 15px } }
-@media (min-width: 1800px) { html { font-size: 16px } }
-@media (min-width: 1900px) { html { font-size: 17px } }
-@media (min-width: 2000px) { html { font-size: 18px } }
-@media (min-width: 2100px) { html { font-size: 19px } }
-@media (min-width: 2200px) { html { font-size: 20px } }
-@media (min-width: 3200px) { html { font-size: 30px } }
+@media (min-width: 1700px) { html { font-size: 16px } }
+@media (min-width: 1800px) { html { font-size: 17px } }
+@media (min-width: 1900px) { html { font-size: 18px } }
+@media (min-width: 2000px) { html { font-size: 19px } }
+@media (min-width: 2100px) { html { font-size: 20px } }
+@media (min-width: 2200px) { html { font-size: 21px } }
+@media (min-width: 2300px) { html { font-size: 22px } }
+@media (min-width: 2400px) { html { font-size: 23px } }
+@media (min-width: 2500px) { html { font-size: 24px } }
+@media (min-width: 2600px) { html { font-size: 25px } }
+@media (min-width: 2700px) { html { font-size: 26px } }
+@media (min-width: 2800px) { html { font-size: 27px } }
+@media (min-width: 2900px) { html { font-size: 28px } }
+@media (min-width: 3000px) { html { font-size: 29px } }
+@media (min-width: 3100px) { html { font-size: 30px } }
+@media (min-width: 3200px) { html { font-size: 31px } }
