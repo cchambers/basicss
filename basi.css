@@ -10,7 +10,7 @@
 
   basi.css actual
   Author: Chris Chambers
-  Version: 3.4.6 [04.14.2015]
+  Version: 3.4.7 [04.22.2015]
   Description: This is the core file for the basicss OOCSS framework.
   Contents: 
   - Setup/Reset
@@ -534,7 +534,8 @@ screen and (orientation: portrait) {
 }
 
 /* Scaling CSS Configuration */
-@media (min-width: 0px)    { html { font-size: 9px } }
+@media (min-width: 0px)    { html { font-size: 4px } } 
+@media (min-width: 200px)  { html { font-size: 9px } } 
 @media (min-width: 500px)  { html { font-size: 8px  } }
 @media (min-width: 800px)  { html { font-size: 7px  } }
 @media (min-width: 900px)  { html { font-size: 8px  } }
