@@ -1,0 +1,345 @@
+/*
+  $$\                           $$\
+  $$ |                          \__|
+  $$$$$$$\   $$$$$$\   $$$$$$$\ $$\     $$$$$$$\  $$$$$$$\  $$$$$$$\
+  $$  __$$\  \____$$\ $$  _____|$$ |   $$  _____|$$  _____|$$  _____|
+  $$ |  $$ | $$$$$$$ |\$$$$$$\  $$ |   $$ /      \$$$$$$\  \$$$$$$\
+  $$ |  $$ |$$  __$$ | \____$$\ $$ |   $$ |       \____$$\  \____$$\
+  $$$$$$$  |\$$$$$$$ |$$$$$$$  |$$ |$$\\$$$$$$$\ $$$$$$$  |$$$$$$$  |
+  \_______/  \_______|\_______/ \__|\__|\_______|\_______/ \_______/
+
+  magi.css actual
+  Author: Chris Chambers
+  Version: 1 [1.1.2016]
+  Description: This is the css component accompaniment file for basi.css.
+  Contents:
+  - Material icons by Google
+  - .cinema-embed: scaling youtube iframe wrapper
+  - .oculus: css modal
+  /
+*/
+
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+
+/* 16:9 iframe scaling wrapper */
+.cinema-embed {
+  position: relative;S
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.cinema-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  bottom: 0; right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* oculus modal */
+.oculus.on,
+.oculus:target {
+  transform: none !important;
+  opacity: 1 !important;
+  pointer-events: initial;
+}
+
+.oculus {
+  position: fixed;
+  z-index: 1000;
+  top: 0; right: 0; bottom: 0; left: 0;
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.oculus .content {
+  position: relative;
+  z-index: 1001;
+  max-width: 94rem;
+  max-height: 80vh;
+  margin: auto;
+  margin-top: 10vh;
+  overflow-y: auto;
+}
+
+.oculus .overlay {
+  position: fixed;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.oculus .content {
+  padding: 3rem;
+  background-color: #f2f2f2
+}
+
+.oculus.slide-top {
+  transform: translateY(-100%);
+  transition: all 300ms ease-in;
+}
+
+.oculus.slide-left {
+  transform: translateY(0) translateX(-100%);
+  transition: all 300ms ease-in;
+}
+
+.oculus.fade {
+  opacity: 0;
+  transform: translateY(-100%);
+  transition: transform 0ms linear, opacity 300ms ease-in;
+}
+
+@media (max-width: 800px) {
+  .oculus .content {
+    max-width: calc(100% - 3rem);
+  }
+}
+
+/* baseline configuration for 30px and 26px */
+/* .show-baseline classes will line an element for you.. */
+
+/* Uncomment this line to use Google's hosted version of Open Sans: */
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic,700italic,800italic); */
+
+[class*='show-baseline'] {
+  position: relative;
+  overflow: hidden;
+}
+
+[class*='show-baseline']:before {
+  display: block;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  top: 0; left: 0;
+  background-image: linear-gradient( to bottom, rgba(255,0,0,1), transparent 1px, transparent 10px);
+  z-index: 0;
+}
+
+/* 30px baseline config for Open Sans */
+.baseline30 .show-baseline:before {
+  background-size: 100% 3rem;
+}
+.baseline30 {
+  line-height: 3rem;
+}
+
+.baseline30 h1:last-child,
+.baseline30 h2:last-child,
+.baseline30 h3:last-child,
+.baseline30 h4:last-child,
+.baseline30 h5:last-child {
+  margin-bottom: 2.5rem;
+}
+
+.baseline30 h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 0.4rem;
+  margin-bottom: -0.5rem;
+}
+.baseline30 p + h1 {
+  margin-top: -0.5rem;
+}
+
+.baseline30 h2 {
+  font-size: 2.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: -0.6rem;
+}
+
+.baseline30 p + h2,
+.baseline30 ul + h2,
+.baseline30 ol + h2 {
+  margin-top: -0.4rem;
+}
+
+.baseline30 h1 + h2 {
+  margin-top: 0.6rem;
+}
+
+.baseline30 h3 {
+  font-size: 2rem;
+  margin-top: 0.8rem;
+  margin-bottom: -0.9rem;
+}
+
+.baseline30 p + h3,
+.baseline30 ul + h3,
+.baseline30 ol + h3 {
+  margin-top: -0.1rem;
+  margin-bottom: -0.9rem;
+}
+
+.baseline30 h2 + h3 {
+  margin-top: 0.9rem;
+}
+
+.baseline30 p,
+.baseline30 ul,
+.baseline30 ol {
+  margin-top: 1rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+}
+
+.baseline30 p + p {}
+
+.baseline30 p:last-child,
+.baseline30 ul:last-child,
+.baseline30 ol:last-child {
+  margin-bottom: 2.1rem
+}
+
+.baseline30 input {
+  display: block;
+  height: 3rem;
+  width: 100%;
+  background-color: #fff;
+}
+
+.baseline30 p + input,
+.baseline30 ul + input,
+.baseline30 ol + input {
+  margin-top: -0.9rem;
+  margin-bottom: -0.1rem;
+}
+
+.baseline30 .image {
+  height: 21rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 250ms ease;
+  margin-bottom: 3.9rem;
+}
+
+.baseline30 p + .image,
+.baseline30 ul + .image,
+.baseline30 ol + .image,
+.image + .image {
+  margin-top: -0.9rem;
+  min-height: 3rem;
+}
+
+
+/* 26px baseline config for Open Sans */
+.baseline26 .show-baseline:before {
+  background-size: 100% 2.6rem;
+}
+
+.baseline26 h1:last-child,
+.baseline26 h2:last-child,
+.baseline26 h3:last-child,
+.baseline26 h4:last-child,
+.baseline26 h5:last-child {
+  margin-bottom: 2.1rem;
+}
+
+.baseline26 {
+  line-height: 2.6rem;
+}
+
+.baseline26 h1 {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  margin-top: 0.3rem;
+  margin-bottom: -0.3rem;
+}
+
+.baseline26 p + h1 {
+  margin-top: -0.4rem;
+}
+
+.baseline26 h2 {
+  font-size: 2.2rem;
+  margin-top: 0.4rem;
+  margin-bottom: -0.4rem;
+}
+
+.baseline26 p + h2,
+.baseline26 ul + h2,
+.baseline26 ol + h2 {
+  margin-top: -0.3rem;
+}
+
+.baseline26 h1 + h2 {
+  margin-top: 0.4rem;
+}
+
+.baseline26 h3 {
+  font-size: 1.8rem;
+  margin-top: 0.6rem;
+  margin-bottom: -0.6rem;
+}
+
+.baseline26 p + h3,
+.baseline26 ul + h3,
+.baseline26 ol + h3 {
+  margin-top: -0.1rem;
+  margin-bottom: -0.6rem;
+}
+
+.baseline26 h2 + h3 {
+  margin-top: 0.6rem;
+}
+
+.baseline26 p,
+.baseline26 ul,
+.baseline26 ol {
+  margin-top: 0.7rem;
+  line-height: 2.6rem;
+  margin-bottom: 2.6rem;
+}
+
+.baseline26 p + p {}
+
+.baseline26 p:last-child,
+.baseline26 ul:last-child,
+.baseline26 ol:last-child {
+  margin-bottom: 1.4rem;
+  color: lime;
+}
+
+.baseline26 input {
+  display: inline-block;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 3.1rem;
+}
+
+.baseline26 p + input,
+.baseline26 ul + input,
+.baseline26 ol + input {
+  margin-top: -3.6rem;
+}
+
+.baseline26 .image {
+  height: 26rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 250ms ease;
+  background-color: #ddd;
+  margin-bottom: 3.3rem;
+}
+
+.baseline26 p + .image,
+.baseline26 ul + .image,
+.baseline26 ol + .image,
+.baseline26 .image + .image {
+  margin-top: -0.7rem;
+  min-height: 2.6rem;
+}
+
