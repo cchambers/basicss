@@ -13,9 +13,11 @@
   Version: 1 [1.1.2016]
   Description: This is the css component accompaniment file for basi.css.
   Contents:
-  - Material icons by Google
+  - Material icons by Google: https://design.google.com/icons/
+  - flexbox full-page footer
   - .cinema-embed: scaling youtube iframe wrapper
   - .oculus: css modal
+  - two default baseline configurations for Open Sans
   /
 */
 
@@ -104,9 +106,6 @@
 
 /* baseline configuration for 30px and 26px */
 /* .show-baseline classes will line an element for you.. */
-
-/* Uncomment this line to use Google's hosted version of Open Sans: */
-/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic,700italic,800italic); */
 
 [class*='show-baseline'] {
   position: relative;
