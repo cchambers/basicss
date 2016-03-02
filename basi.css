@@ -95,7 +95,7 @@ body {
 }
 
 header { display: block }
-main { display: block; flex: 1 }
+main { display: block; flex: 1 auto }
 footer { display: block }
 
 img {
