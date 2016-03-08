@@ -3,61 +3,12 @@ Introduction
 Basicss is an object-oriented scaling CSS framework. The real beauty of OO CSS is that the classes explain themselves. I will break down each group of rules that are included in the following sections...
 
 ### Major Change Log: 
-v3 - Padding removed entirely from content flow system to encourage nesting.
-v3.4.5 - Added portrait orientation to "touch" breakpoint.
+- v3 - Padding removed entirely from content flow system to encourage nesting.  
+- v3.4.5 - Added portrait orientation to "touch" breakpoint.  
+- v4 - "desktop" and "touch" deprecated - replaced with "high-on/high-off" and "low-on/low-off".  
 
 OOCSS
 -----
-### Trigger Classes 
-
-These classes are generally used to preload a class with properties that will be change eventually via a JavaScript Timer or some other event on the page.
-
-    .fill            { position: absolute; width: 100%; height: 100% }
-    .fill-height     { height: 100% }
-    .fill-width      { width: 100% }
-    .off             { display: none }
-    .on,
-    .block           { display: block }
-    .on-inline,
-    .inline          { display: inline-block }
-    .alpha-off       { opacity: 0 }
-    .alpha-on        { opacity: 1 }
-    .stage-right     { left: 110% !important }
-    .stage-left      { right: 110% !important }
-    .stage-top       { bottom: 110% !important }
-    .stage-bottom    { top: 110% !important }
-
-
-
-### Positioning  
-
-    .center-box      { margin-left: auto; margin-right: auto }
-    .float-none      { float: none !important }
-    .float-left      { float: left !important }
-    .float-right     { float: right !important }
-    .absolute        { display: block; position: absolute }
-    .relative        { display: block; position: relative }
-    .fixed           { display: block; position: fixed }
-    .static          { display: block; position: static }
-    .clear           { clear: both; overflow: hidden }
-
-In regards to absolute positioning, just add the *.absolute* class and proceed to add the edge distances in-line. 
-
-    <div class="absolute back-blue" style="top:100px;left:100px"> 
-        I'm absolutely positioned!
-    </div>
-    
-#### z-index
-    .sub-layer       { position: relative; z-index: -1 }
-    .back-layer      { position: relative; z-index: 1 }
-    .middle-layer    { position: relative; z-index: 2 }
-    .front-layer     { position: relative; z-index: 3 }
-
-### Scrollbar Control
-    .overhide        { overflow: hidden }
-    .overshow        { overflow: visible }
-    .scroll-y        { overflow-y: scroll }
-
 ### Box Modifications
 #### Model
     .no-pad             { padding: 0 !important }
@@ -181,48 +132,7 @@ In regards to absolute positioning, just add the *.absolute* class and proceed t
 #### Size
     .px100          { font-size: 100px; font-size: 10rem }
     .px98           { font-size: 98px; font-size: 9.8rem }
-    .px96           { font-size: 96px; font-size: 9.6rem }
-    .px94           { font-size: 94px; font-size: 9.4rem }
-    .px92           { font-size: 92px; font-size: 9.2rem }
-    .px90           { font-size: 90px; font-size: 9.0rem }
-    .px88           { font-size: 88px; font-size: 8.8rem }
-    .px86           { font-size: 86px; font-size: 8.6rem }
-    .px84           { font-size: 84px; font-size: 8.4rem }
-    .px82           { font-size: 82px; font-size: 8.2rem }
-    .px80           { font-size: 80px; font-size: 8.0rem }
-    .px78           { font-size: 78px; font-size: 7.8rem }
-    .px76           { font-size: 76px; font-size: 7.6rem }
-    .px74           { font-size: 74px; font-size: 7.4rem }
-    .px72           { font-size: 72px; font-size: 7.2rem }
-    .px70           { font-size: 70px; font-size: 7.0rem }
-    .px68           { font-size: 68px; font-size: 6.8rem }
-    .px66           { font-size: 66px; font-size: 6.6rem }
-    .px64           { font-size: 64px; font-size: 6.4rem }
-    .px62           { font-size: 62px; font-size: 6.2rem }
-    .px60           { font-size: 60px; font-size: 6.0rem }
-    .px58           { font-size: 58px; font-size: 5.8rem }
-    .px56           { font-size: 56px; font-size: 5.6rem }
-    .px54           { font-size: 54px; font-size: 5.4rem }
-    .px52           { font-size: 52px; font-size: 5.2rem }
-    .px50           { font-size: 50px; font-size: 5.0rem }
-    .px48           { font-size: 48px; font-size: 4.8rem }
-    .px46           { font-size: 46px; font-size: 4.6rem }
-    .px44           { font-size: 44px; font-size: 4.4rem }
-    .px42           { font-size: 42px; font-size: 4.2rem }
-    .px40           { font-size: 40px; font-size: 4.0rem }
-    .px38           { font-size: 38px; font-size: 3.8rem }
-    .px36           { font-size: 36px; font-size: 3.6rem }
-    .px34           { font-size: 34px; font-size: 3.4rem }
-    .px32           { font-size: 32px; font-size: 3.2rem }
-    .px30           { font-size: 30px; font-size: 3.0rem }
-    .px28           { font-size: 28px; font-size: 2.8rem }
-    .px26           { font-size: 26px; font-size: 2.6rem }
-    .px24           { font-size: 24px; font-size: 2.4rem }
-    .px22           { font-size: 22px; font-size: 2.2rem }
-    .px20           { font-size: 20px; font-size: 2.0rem }
-    .px18           { font-size: 18px; font-size: 1.8rem }
-    .px16           { font-size: 16px; font-size: 1.6rem }
-    .px14           { font-size: 14px; font-size: 1.4rem }
+    ...
     .px12           { font-size: 12px; font-size: 1.2rem }
     .px10           { font-size: 10px; font-size: 1.0rem }
     
@@ -237,51 +147,59 @@ In regards to absolute positioning, just add the *.absolute* class and proceed t
 #### Line Height    
     .lh100          { line-height: 100px; line-height: 10rem }
     .lh98           { line-height: 98px; line-height: 9.8rem }
-    .lh96           { line-height: 96px; line-height: 9.6rem }
-    .lh94           { line-height: 94px; line-height: 9.4rem }
-    .lh92           { line-height: 92px; line-height: 9.2rem }
-    .lh90           { line-height: 90px; line-height: 9.0rem }
-    .lh88           { line-height: 88px; line-height: 8.8rem }
-    .lh86           { line-height: 86px; line-height: 8.6rem }
-    .lh84           { line-height: 84px; line-height: 8.4rem }
-    .lh82           { line-height: 82px; line-height: 8.2rem }
-    .lh80           { line-height: 80px; line-height: 8.0rem }
-    .lh78           { line-height: 78px; line-height: 7.8rem }
-    .lh76           { line-height: 76px; line-height: 7.6rem }
-    .lh74           { line-height: 74px; line-height: 7.4rem }
-    .lh72           { line-height: 72px; line-height: 7.2rem }
-    .lh70           { line-height: 70px; line-height: 7.0rem }
-    .lh68           { line-height: 68px; line-height: 6.8rem }
-    .lh66           { line-height: 66px; line-height: 6.6rem }
-    .lh64           { line-height: 64px; line-height: 6.4rem }
-    .lh62           { line-height: 62px; line-height: 6.2rem }
-    .lh60           { line-height: 60px; line-height: 6.0rem }
-    .lh58           { line-height: 58px; line-height: 5.8rem }
-    .lh56           { line-height: 56px; line-height: 5.6rem }
-    .lh54           { line-height: 54px; line-height: 5.4rem }
-    .lh52           { line-height: 52px; line-height: 5.2rem }
-    .lh50           { line-height: 50px; line-height: 5.0rem }
-    .lh48           { line-height: 48px; line-height: 4.8rem }
-    .lh46           { line-height: 46px; line-height: 4.6rem }
-    .lh44           { line-height: 44px; line-height: 4.4rem }
-    .lh42           { line-height: 42px; line-height: 4.2rem }
-    .lh40           { line-height: 40px; line-height: 4.0rem }
-    .lh38           { line-height: 38px; line-height: 3.8rem }
-    .lh36           { line-height: 36px; line-height: 3.6rem }
-    .lh34           { line-height: 34px; line-height: 3.4rem }
-    .lh32           { line-height: 32px; line-height: 3.2rem }
-    .lh30           { line-height: 30px; line-height: 3.0rem }
-    .lh28           { line-height: 28px; line-height: 2.8rem }
-    .lh26           { line-height: 26px; line-height: 2.6rem }
-    .lh24           { line-height: 24px; line-height: 2.4rem }
-    .lh22           { line-height: 22px; line-height: 2.2rem }
-    .lh20           { line-height: 20px; line-height: 2.0rem }
-    .lh18           { line-height: 18px; line-height: 1.8rem }
-    .lh16           { line-height: 16px; line-height: 1.6rem }
-    .lh14           { line-height: 14px; line-height: 1.4rem }
+    ...
     .lh12           { line-height: 12px; line-height: 1.2rem }
     .lh10           { line-height: 10px; line-height: 1.0rem }
+
+
+### Positioning  
+
+    .center-box      { margin-left: auto; margin-right: auto }
+    .float-none      { float: none !important }
+    .float-left      { float: left !important }
+    .float-right     { float: right !important }
+    .absolute        { display: block; position: absolute }
+    .relative        { display: block; position: relative }
+    .fixed           { display: block; position: fixed }
+    .static          { display: block; position: static }
+    .clear           { clear: both; overflow: hidden }
+
+In regards to absolute positioning, just add the `.absolute` class and proceed to add the edge distances in-line. This is where any javascript modification you make will be, and makes it easier for your content entry team to position elements freely. 
+
+    <div class="absolute back-blue" style="top:100px;left:100px"> 
+        I'm absolutely positioned!
+    </div>
     
+#### z-index
+    .sub-layer       { position: relative; z-index: -1 }
+    .back-layer      { position: relative; z-index: 1 }
+    .middle-layer    { position: relative; z-index: 2 }
+    .front-layer     { position: relative; z-index: 3 }
+    
+### Trigger Classes 
+
+These classes are generally used to preload a class with properties that will be change eventually via a JavaScript Timer or some other event on the page.
+
+    .fill            { position: absolute; width: 100%; height: 100% }
+    .fill-height     { height: 100% }
+    .fill-width      { width: 100% }
+    .off             { display: none }
+    .on,
+    .block           { display: block }
+    .on-inline,
+    .inline          { display: inline-block }
+    .alpha-off       { opacity: 0 }
+    .alpha-on        { opacity: 1 }
+    .stage-right     { left: 110% !important }
+    .stage-left      { right: 110% !important }
+    .stage-top       { bottom: 110% !important }
+    .stage-bottom    { top: 110% !important }
+
+
+### Scrollbar Control
+    .overhide        { overflow: hidden }
+    .overshow        { overflow: visible }
+    .scroll-y        { overflow-y: scroll }
 
     
 Flexbox 
@@ -304,19 +222,21 @@ Flexbox is supported in most modern browsers, but implemented in too many ways t
        -ms-flex-pack: justify;
      }
      
-The *.flex* class can be applied to any container to make the children capable of becoming flex-items. The default settings above make items justify themselves across a single row, but there are a number of class mods that can be applied...
+The `.flex` class can be applied to any container to make the children capable of becoming flex-items. The default settings above make items justify themselves across a single row, but there are a number of class mods that can be applied...
      
 #### Flex Container Modifications
     .flex.row        { flex-direction: row; -ms-flex-direction: row }
     .flex.row-rev    { flex-direction: row-reverse; -ms-flex-direction: row-reverse }
     .flex.col        { flex-direction: column; -ms-flex-direction: column }
     .flex.col-rev    { flex-direction: column-reverse; -ms-flex-direction: column-reverse }
+    
 Flex-items can be displayed as rows or columns, and even reversed. 
 
     .flex.wrap       { flex-wrap: wrap; -ms-flex-wrap: wrap }
     .flex.nowrap     { flex-wrap: nowrap; -ms-flex-wrap: nowrap }
     .flex.wrap-rev   { flex-wrap: wrap-reverse; -ms-flex-wrap: wrap-reverse }
-The default setting is "nowrap", but if you want your elements to break to another line, you will need to change this by adding a *.wrap*.
+    
+The default setting is "nowrap", but if you want your elements to break to another line, you will need to change this by adding a `.wrap`.
     
     .flex.start      { justify-content: flex-start; -ms-flex-pack: start }
     .flex.end        { justify-content: flex-end; -ms-flex-pack: end }
@@ -330,26 +250,25 @@ The default setting is "nowrap", but if you want your elements to break to anoth
     .flex.stretch    { align-content: stretch; -ms-flex-align: stretch }
     .flex.content    { align-content: baseline; -ms-flex-align: baseline }
 
-
 ### Flex Item
     .flex-item {
-       flex-grow: 0;
-       flex-shrink:.5;
-       flex-basis: auto
-     }
+      flex-grow: 0;
+      flex-shrink:.5;
+      flex-basis: auto
+    }
 
-     .flex-item.top    { align-self: flex-start; }
-     .flex-item.bottom { align-self: flex-end; }
-     .flex-item.middle { align-self: center; }
-     .flex-item.stretch{ align-self: stretch; }
-     .flex-item.content{ align-self: baselinet; }
+    .flex-item.top    { align-self: flex-start; }
+    .flex-item.bottom { align-self: flex-end; }
+    .flex-item.middle { align-self: center; }
+    .flex-item.stretch{ align-self: stretch; }
+    .flex-item.content{ align-self: baselinet; }
      
 #### Flex Item Modifications
     .flex-item.single  { flex-grow: 0 }
     .flex-item.double  { flex-grow: 1 }
     .flex-item.triple  { flex-grow: 2 }
 
-Flex items are allowed to grow relative to their width. So, a *.single* with a width setting of 200px would grow no larger than 200px, while a *.double* flex-item could grow to 400px, etc.
+Flex items are allowed to grow relative to their width. So, a `.single` with a width setting of 200px would grow no larger than 200px, while a `.double` flex-item could grow to 400px, etc.
     
     .order-0{ order: 0; -ms-box-ordinal: 0 }
     .order-1{ order: 1; -ms-box-ordinal: 1 }
@@ -364,22 +283,17 @@ Flex items are allowed to grow relative to their width. So, a *.single* with a w
     
 Sometimes you may find the need to move a flex-item around in the stack... this is what the order property is used for! 
 
-**Pro-tip:** You can force an element to the front indefinitely by giving it a negative order.
-
 Content Flow Control
 ---------------
+You can make any layout imaginable with this system. It doesn't work like a 'grid', per say... grids are generally padded. You can pad this system any way you want with the OO classes provided:
 
-This is not a "grid" -- it is a method of dividing rows into fractions:
-
-    .row      { width: 100%; float: left }
-    
-    [class*=col-]{
-      float: left;
-      padding: 10px;
-      padding-right: 30px
+    .contain {
+      width: 100rem;
+      margin-left: auto;
+      margin-right: auto
     }
-
-These three elements make up our grid. Each set of columns belong in a *.row*. Any content that needs to be constrained to the center of the page is wrapped with a *.container*. 
+    .row { width: 100%; float: left }
+    [class`=col-] { float: left }
 
     .col-1-1 { width: 100% }
     .col-3-4 { width: 75% }
@@ -389,21 +303,21 @@ These three elements make up our grid. Each set of columns belong in a *.row*. A
     .col-2-5 { width: 40% }
     .col-3-5 { width: 60% }
     .col-4-5 { width: 80% }
-    .col-1-6 { width: 16.66% }
-    .col-5-6 { width: 83.33% }
+    .col-1-6 { width: calc( 100% / 6 ) }
+    .col-5-6 { width: 83.33%; width: calc(100% - ( 100%/5.99999 ) ) }
+    .col-7-8 { width: 87.5% }
     .col-1-8 { width: 12.5% }
     .col-3-8 { width: 37.5% }
-    .col-1-3 { width: 33.33% }
+    .col-1-3 { width: calc( 100% / 3 ) }
     .col-2-3 { width: 66.66% }
 
-Super simple responsive grid. The column widths are denoted by fractions: 1-2 is 1/2, and 1-4 is 1/4, etc. You can use any combination of these to fill out a row. Careful planning with rows/columns can make transitions between breakpoints seamless... 
+Use any combination of these in a row to create the desired layout. Only direct descendents of a `.row` will shift to 100% at the 800px breakpoint, therefore, nesting columns within columns (or other divs) will keep them at their original size. 
 
-Only columns within rows will flex to 100% at 800px wide. Nesting columns within columns allows for better content control on smaller devices. 
-
+There are four "on/off" switch classes for the two main states: `.high-on` and `.high-off` for the high (desktop) range, and `.low-on`/`.low-off` for the lower range.
 
 How to use Basicss
 ==================
-The idea with OOCSS is to write rules with low specificity that can be stacked (or cascaded) on top of each other. It is like having a pantry full of ingredients and the recipe is up to you. 
+The idea with OOCSS is to write rules with low specificity that can be stacked (or cascaded) on top of each other. It is like a bucket of legos for you to build things with. 
 
     <div class="row">
         <div class="col-1-2">
@@ -425,29 +339,8 @@ Basicss uses the scaling CSS method of keeping everything where it belongs:
 - < 500px: 90% scaled (small phones)
 - < 800px: 80% scaled (large handhelds)
 - > 800px: 80% scaled (small desktops and horizontal handhelds)
-- < 1000p: 90% scaled
-- < 1100px: 100% scaled
-- < 1200px: 110% scaled
-...
-- ~ 4k: 300% scaled (latest smart televisions and upcoming handhelds)
-
-    @media (min-width: 0px)    { html { font-size: 10px } }
-    @media (min-width: 500px)  { html { font-size: 9px  } }
-    @media (min-width: 800px)  { html { font-size: 8px  } }
-    @media (min-width: 1000px) { html { font-size: 9px  } }
-    @media (min-width: 1100px) { html { font-size: 10px } }
-    @media (min-width: 1200px) { html { font-size: 11px } }
-    @media (min-width: 1300px) { html { font-size: 12px } }
-    @media (min-width: 1400px) { html { font-size: 13px } }
-    @media (min-width: 1500px) { html { font-size: 14px } }
-    @media (min-width: 1600px) { html { font-size: 15px } }
-    @media (min-width: 1800px) { html { font-size: 16px } }
-    @media (min-width: 1900px) { html { font-size: 17px } }
-    @media (min-width: 2000px) { html { font-size: 18px } }
-    @media (min-width: 2100px) { html { font-size: 19px } }
-    @media (min-width: 2200px) { html { font-size: 20px } }
-    @media (min-width: 3200px) { html { font-size: 30px } }
-
-
-... and there are two classes for turning on/off elements between "touch" and "desktop" configurations: `.touch` and `.desktop`.
-
+- < 1000px: 90% scaled
+- < 1100px: 100% scaled (~1024 range; horizontal ipads and average PC monitors)
+- < 1200px: 110% scaled  
+- ... (modern PC monitors)
+- ~ 4k: 300% scaled (latest smart televisions)
