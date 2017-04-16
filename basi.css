@@ -319,7 +319,7 @@ ol.lower-alpha { list-style: lower-alpha }
   overflow: hidden;
 }
 
-.px10 { font-size: 10rem }
+.px100 { font-size: 10rem }
 .px99 { font-size: 9.9rem }
 .px98 { font-size: 9.8rem }
 .px97 { font-size: 9.7rem }
@@ -411,7 +411,7 @@ ol.lower-alpha { list-style: lower-alpha }
 .px11 { font-size: 1.1rem }
 .px10 { font-size: 1.0rem }
  
-.lh10 { line-height: 10rem }
+.lh100 { line-height: 10rem }
 .lh99 { line-height: 9.9rem }
 .lh98 { line-height: 9.8rem }
 .lh97 { line-height: 9.7rem }
