@@ -7,13 +7,13 @@ Basicss is an object-oriented scaling CSS framework. The real beauty of OO CSS i
 - v3.4.5 - Added portrait orientation to "touch" breakpoint.  
 - v4 - "desktop" and "touch" deprecated - replaced with "high-on/high-off" and "low-on/low-off".  
 - v5 - OO classes are becoming the norm so we have simplified a bunch of class names
-     - Rows now use flex; items outside of rows still use float... you won't notice much of a difference.
-     - Removed pixel definitons to lower file size.
         + "lips" -> y
         + "sides" -> x
         + "light" -> half
         + "hard" -> double
-        + "super" -> quad"
+        + "super" -> quad
+     - Rows now use flex; items outside of rows still use float... you won't notice much of a difference.
+     - Removed pixel definitons to lower file size.
 
 OOCSS
 -----
