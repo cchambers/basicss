@@ -1984,10 +1984,10 @@ ol.lower-alpha {
   [attr*="col-"][attr*="push-"] {
     margin-left: 0;
   }
-  .desktop, .low-off {
+  .low-off {
     display: none !important
   }
-  .touch, .low-on {
+  .low-on {
     display: initial !important
   }
   .low-1-1 {
@@ -2040,10 +2040,10 @@ ol.lower-alpha {
 }
 
 @media (min-width: 800px) {
-  .desktop, .high-on {
+  .high-on {
     display: initial
   }
-  .touch, .high-off {
+  .high-off {
     display: none
   }
 }

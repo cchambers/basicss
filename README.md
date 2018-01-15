@@ -14,6 +14,7 @@ Basicss is an object-oriented scaling CSS framework. The real beauty of OO CSS i
         + "super" -> quad
      - Rows now use flex; items outside of rows still use float... you won't notice much of a difference.
      - Removed pixel definitons to lower file size.
+     - Deprecated classes removed.
 
 OOCSS
 -----
