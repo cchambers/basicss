@@ -96,11 +96,11 @@ OOCSS
     .italic         { font-style: italic }
 
 #### Line Height    
-    .lh100          { line-height: 100px; line-height: 10rem }
-    .lh98           { line-height: 98px; line-height: 9.8rem }
+    .lh100          { line-height: 10rem }
+    .lh98           { line-height: 9.8rem }
     ...
-    .lh12           { line-height: 12px; line-height: 1.2rem }
-    .lh10           { line-height: 10px; line-height: 1.0rem }
+    .lh12           { line-height: 1.2rem }
+    .lh10           { line-height: 1.0rem }
 
 
 ### Positioning  
@@ -294,4 +294,4 @@ Basicss uses the scaling CSS method of keeping everything where it belongs:
 - < 1100px: 100% scaled (~1024 range; horizontal ipads and average PC monitors)
 - < 1200px: 110% scaled  
 - ... (modern PC monitors)
-- ~ 4k: 300% scaled (latest smart televisions)
+- ~ 4k: 300% scaled 
