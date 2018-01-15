@@ -10,11 +10,11 @@ Basicss is an object-oriented scaling CSS framework. The real beauty of OO CSS i
         - Removed pixel definitons to lower file size.  
         - Deprecated classes removed.  
         - OO classes are becoming the norm so we have simplified a bunch of class names  
-                + "lips" -> y  
-                + "sides" -> x  
-                + "light" -> half  
-                + "hard" -> double  
-                + "super" -> quad  
+                - "lips" -> y  
+                - "sides" -> x  
+                - "light" -> half  
+                - "hard" -> double  
+                - "super" -> quad  
 
 OOCSS
 -----
