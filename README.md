@@ -123,9 +123,9 @@ In regards to absolute positioning, just add the `.absolute` class and proceed t
     
 #### z-index
     .sub-layer       { position: relative; z-index: -1 }
-    .back-layer      { position: relative; z-index: 1 }
+    .bottom-layer    { position: relative; z-index: 1 }
     .middle-layer    { position: relative; z-index: 2 }
-    .front-layer     { position: relative; z-index: 3 }
+    .top-layer       { position: relative; z-index: 3 }
     
 ### Trigger Classes 
 
