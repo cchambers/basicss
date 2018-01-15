@@ -71,13 +71,13 @@ OOCSS
     .text-center    { text-align: center }
     .text-justify   { text-align: justify }
     .force-justify  { text-align: justify }
-    .force-justify:after{
+    .force-justify:after {
       display: inline-block;
       width: 100%;
       content: '.';
       height: 0;
       overflow: hidden;
-}
+    }
     
 #### Size
     .px100          { font-size: 10rem }
@@ -255,7 +255,7 @@ You can make any layout imaginable with this system. It doesn't work like a 'gri
 
 Use any combination of these in a row to create the desired layout. Only direct descendents of a `.row` will shift to 100% at the 800px breakpoint, therefore, nesting columns within columns (or other divs) will keep them at their original size. 
 
-There are four "on/off" switch classes for the two main states: `.high-on` and `.high-off` for the high (desktop) range, and `.low-on`/`.low-off` for the lower range.
+There are four "on/off" switch classes for the two main states: `.high-on`/`.high-off` for the high (desktop) range, and `.low-on`/`.low-off` for the lower range.
 
 How to use Basicss
 ==================
