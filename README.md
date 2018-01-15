@@ -21,7 +21,6 @@ OOCSS
 #### Model
     .pad{-edge}{-amount}
     .margin{-edge}{-amount}
-    
 
     Edges: t, r, b, l, x (l+r), y (t+b)
     Amounts: half, [none], double, quad
@@ -159,47 +158,39 @@ Flexbox is supported in most modern browsers, but implemented in too many ways t
 
 ### Flex Container
     .flex  {
-       display: -webkit-box;
-       display: -moz-box;
-       display: -ms-flexbox;
-       display: -ms-box;
-       display: -webkit-flex;
        display: flex;
        flex-direction: row;
-       -ms-flex-direction: row;
        flex-wrap: nowrap;
-       -ms-flex-wrap: nowrap;
        justify-content: space-between;
-       -ms-flex-pack: justify;
      }
      
 The `.flex` class can be applied to any container to make the children capable of becoming flex-items. The default settings above make items justify themselves across a single row, but there are a number of class mods that can be applied...
      
 #### Flex Container Modifications
-    .flex.row        { flex-direction: row; -ms-flex-direction: row }
-    .flex.row-rev    { flex-direction: row-reverse; -ms-flex-direction: row-reverse }
-    .flex.col        { flex-direction: column; -ms-flex-direction: column }
-    .flex.col-rev    { flex-direction: column-reverse; -ms-flex-direction: column-reverse }
+    .flex.row        { flex-direction: row }
+    .flex.row-rev    { flex-direction: row-reverse }
+    .flex.col        { flex-direction: column}
+    .flex.col-rev    { flex-direction: column-reverse }
     
 Flex-items can be displayed as rows or columns, and even reversed. 
 
-    .flex.wrap       { flex-wrap: wrap; -ms-flex-wrap: wrap }
-    .flex.nowrap     { flex-wrap: nowrap; -ms-flex-wrap: nowrap }
-    .flex.wrap-rev   { flex-wrap: wrap-reverse; -ms-flex-wrap: wrap-reverse }
+    .flex.wrap       { flex-wrap: wrap }
+    .flex.nowrap     { flex-wrap: nowrap }
+    .flex.wrap-rev   { flex-wrap: wrap-reverse; }
     
 The default setting is "nowrap", but if you want your elements to break to another line, you will need to change this by adding a `.wrap`.
     
-    .flex.start      { justify-content: flex-start; -ms-flex-pack: start }
-    .flex.end        { justify-content: flex-end; -ms-flex-pack: end }
-    .flex.center     { justify-content: center; -ms-flex-pack: center }
-    .flex.between    { justify-content: space-between; -ms-flex-pack: justify }
-    .flex.around     { justify-content: space-around; -ms-flex-pack: justify }
+    .flex.start      { justify-content: flex-start }
+    .flex.end        { justify-content: flex-end }
+    .flex.center     { justify-content: center }
+    .flex.between    { justify-content: space-between }
+    .flex.around     { justify-content: space-around }
 
-    .flex.top        { align-content: flex-start; -ms-flex-align: start }
-    .flex.bottom     { align-content: flex-end; -ms-flex-align: end }
-    .flex.middle     { align-content: center; -ms-flex-align: center }
-    .flex.stretch    { align-content: stretch; -ms-flex-align: stretch }
-    .flex.content    { align-content: baseline; -ms-flex-align: baseline }
+    .flex.top        { align-content: flex-start }
+    .flex.bottom     { align-content: flex-end }
+    .flex.middle     { align-content: center }
+    .flex.stretch    { align-content: stretch }
+    .flex.content    { align-content: baseline }
 
 ### Flex Item
     .flex-item {
@@ -219,18 +210,18 @@ The default setting is "nowrap", but if you want your elements to break to anoth
     .flex-item.double  { flex-grow: 1 }
     .flex-item.triple  { flex-grow: 2 }
 
-Flex items are allowed to grow relative to their width. So, a `.single` with a width setting of 200px would grow no larger than 200px, while a `.double` flex-item could grow to 400px, etc.
+Flex items are allowed to grow relative to their width. A `.single` item with a width setting of 200px would grow no larger than 200px, while a `.double` flex-item could grow to 400px, etc.
     
-    .order-0{ order: 0; -ms-box-ordinal: 0 }
-    .order-1{ order: 1; -ms-box-ordinal: 1 }
-    .order-2{ order: 2; -ms-box-ordinal: 2 }
-    .order-3{ order: 3; -ms-box-ordinal: 3 }
-    .order-4{ order: 4; -ms-box-ordinal: 4 }
-    .order-5{ order: 5; -ms-box-ordinal: 5 }
-    .order-6{ order: 6; -ms-box-ordinal: 6 }
-    .order-7{ order: 7; -ms-box-ordinal: 7 }
-    .order-8{ order: 8; -ms-box-ordinal: 8 }
-    .order-9{ order: 9; -ms-box-ordinal: 9 }
+    .order-0{ order: 0 }
+    .order-1{ order: 1 }
+    .order-2{ order: 2 }
+    .order-3{ order: 3 }
+    .order-4{ order: 4 }
+    .order-5{ order: 5 }
+    .order-6{ order: 6 }
+    .order-7{ order: 7 }
+    .order-8{ order: 8 }
+    .order-9{ order: 9 }
     
 Sometimes you may find the need to move a flex-item around in the stack... this is what the order property is used for! 
 
