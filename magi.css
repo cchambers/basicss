@@ -10,11 +10,10 @@
 
   magi.css actual
   Author: Chris Chambers
-  Version: 1 [1.1.2016]
+  Version: 1.1 [1.15.2018]
   Description: This is the css component accompaniment file for basi.css.
   Contents:
   - Material icons by Google: https://design.google.com/icons/
-  - flexbox full-page footer
   - .cinema-embed: scaling youtube iframe wrapper
   - .oculus: css modal
   - two default baseline configurations for Open Sans
@@ -25,7 +24,7 @@
 
 /* 16:9 iframe scaling wrapper */
 .cinema-embed {
-  position: relative;S
+  position: relative;
   height: 0;
   padding-bottom: 56.25%;
 }
@@ -300,7 +299,7 @@
   margin-bottom: 2.6rem;
 }
 
-.baseline26 p + p {}
+/* .baseline26 p + p {} */
 
 .baseline26 p:last-child,
 .baseline26 ul:last-child,

@@ -6,74 +6,25 @@ Basicss is an object-oriented scaling CSS framework. The real beauty of OO CSS i
 - v3 - Padding removed entirely from content flow system to encourage nesting.  
 - v3.4.5 - Added portrait orientation to "touch" breakpoint.  
 - v4 - "desktop" and "touch" deprecated - replaced with "high-on/high-off" and "low-on/low-off".  
+- v5 - OO classes are becoming the norm so we have simplified a bunch of class names
+     - Rows now use flex; items outside of rows still use float... you won't notice much of a difference.
+     - Removed pixel definitons to lower file size.
+        + "lips" -> y
+        + "sides" -> x
+        + "light" -> half
+        + "hard" -> double
+        + "super" -> quad"
 
 OOCSS
 -----
 ### Box Modifications
 #### Model
-    .no-pad             { padding: 0 !important }
-    .pad,   
-    .pad-box            { padding: 30px; padding: 3rem }
-    .pad-sides          { padding-left: 30px; padding-right: 30px; padding-left: 3rem; padding-right: 3rem }
-    .pad-lips           { padding-top: 30px; padding-bottom: 30px; padding-top: 3rem; padding-bottom: 3rem }
-    .pad-top            { padding-top: 30px; padding-top: 3rem }
-    .pad-bottom         { padding-bottom: 30px; padding-bottom: 3rem }
-    .pad-right          { padding-right: 30px; padding-right: 3rem }
-    .pad-left           { padding-left: 30px; padding-left: 3rem; }
-    .pad-light,
-    .pad-box-light      { padding: 15px; padding: 1.5rem; }
-    .pad-sides-light    { padding-left: 15px; padding-right: 15px; padding-left: 1.5rem; padding-right: 1.5rem }
-    .pad-lips-light     { padding-top: 15px; padding-bottom: 15px; padding-top: 1.5rem; padding-bottom: 1.5rem }
-    .pad-top-light      { padding-top: 15px; padding-top: 1.5rem }
-    .pad-bottom-light   { padding-bottom: 15px; padding-bottom: 1.5rem }
-    .pad-right-light    { padding-right: 15px; padding-right: 1.5rem }
-    .pad-left-light     { padding-left: 15px; padding-left: 1.5rem }
-    .pad-hard,
-    .pad-box-hard       { padding: 60px; padding: 6rem }
-    .pad-sides-hard     { padding-left: 60px; padding-right: 60px; padding-left: 6rem; padding-right: 6rem }
-    .pad-lips-hard      { padding-top: 60px; padding-bottom: 60px; padding-top: 6rem; padding-bottom: 6rem }
-    .pad-top-hard       { padding-top: 60px; padding-top: 6rem }
-    .pad-bottom-hard    { padding-bottom: 60px; padding-bottom: 6rem }
-    .pad-right-hard     { padding-right: 60px; padding-right: 6rem }
-    .pad-left-hard      { padding-left: 60px; padding-left: 6rem }
+    .pad{-edge}{-amount}
+    .margin{-edge}{-amount}
+    
 
-    .margin,    
-    .margin-box         { margin: 30px; margin: 3rem }
-    .margin-top         { margin-top: 30px; margin-top: 3rem }
-    .margin-bottom      { margin-bottom: 30px; margin-bottom: 3rem; }
-    .margin-right       { margin-right: 30px; margin-right: 3rem }
-    .margin-left        { margin-left: 30px; margin-left: 3rem }
-    .margin-sides       { margin-left: 30px; margin-right: 30px; margin-left: 3rem; margin-right: 3rem }
-    .margin-lips        { margin-top: 30px; margin-bottom: 30px; margin-top: 3rem; margin-bottom: 3rem }
-    .margin-light,
-    .margin-box-light   { margin: 15px; margin: 1.5rem }
-    .margin-top-light   { margin-top: 15px; margin-top: 1.5rem }
-    .margin-bottom-light{ margin-bottom: 15px; margin-bottom: 1.5rem }
-    .margin-right-light { margin-right: 15px; margin-right: 1.5rem }
-    .margin-left-light  { margin-left: 15px; margin-left: 1.5rem }
-    .margin-sides-light { margin-left: 15px; margin-right: 15px; margin-left: 1.5rem; margin-right: 1.5rem }
-    .margin-lips-light  { margin-top: 15px; margin-bottom: 15px; margin-top: 1.5rem; margin-bottom: 1.5rem }
-    .margin-hard,       
-    .margin-box-hard    { margin: 60px; margin: 6rem }
-    .margin-top-hard    { margin-top: 60px; margin-top: 6rem }
-    .margin-bottom-hard { margin-bottom: 60px; margin-bottom: 6rem }
-    .margin-right-hard  { margin-right: 60px; margin-right: 6rem }
-    .margin-left-hard   { margin-left: 60px; margin-left: 6rem }
-    .margin-sides-hard  { margin-left: 60px; margin-right: 60px; margin-left: 6rem; margin-right: 6rem }
-    .margin-lips-hard   { margin-top: 60px; margin-bottom: 60px; margin-top: 6rem; margin-bottom: 6rem }
-
-    .pull-top           { margin-top: -30px; margin-top: -3rem }
-    .pull-bottom        { margin-bottom: -30px; margin-bottom: -3rem }
-    .pull-right         { margin-right: -30px; margin-right: -3rem }
-    .pull-left          { margin-left: -30px; margin-left: -3rem }
-    .pull-top-light     { margin-top: -15px; margin-top: -1.5rem }
-    .pull-bottom-light  { margin-bottom: -15px; margin-bottom: -1.5rem }
-    .pull-right-light   { margin-right: -15px; margin-right: -1.5rem }
-    .pull-left-light    { margin-left: -15px; margin-left: -1.5rem }
-    .pull-top-hard      { margin-top: -60px; margin-top: -6rem }
-    .pull-bottom-hard   { margin-bottom: -60px; margin-bottom: -6rem }
-    .pull-right-hard    { margin-right: -60px; margin-right: -6rem }
-    .pull-left-hard     { margin-left: -60px; margin-left: -6rem }
+    Edges: t, r, b, l, x (l+r), y (t+b)
+    Amounts: half, [none], double, quad
 
 #### HTML5 Columns
     .cols-2 { 
@@ -130,11 +81,11 @@ OOCSS
 }
     
 #### Size
-    .px100          { font-size: 100px; font-size: 10rem }
-    .px98           { font-size: 98px; font-size: 9.8rem }
+    .px100          { font-size: 10rem }
+    .px98           { font-size: 9.8rem }
     ...
-    .px12           { font-size: 12px; font-size: 1.2rem }
-    .px10           { font-size: 10px; font-size: 1.0rem }
+    .px12           { font-size: 1.2rem }
+    .px10           { font-size: 1.0rem }
     
 #### Case
     .normalcase     { text-transform: normal }
