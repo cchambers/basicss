@@ -10,7 +10,7 @@
 
   basi.css actual
   Author: Chris Chambers
-  Version: 4 [1.1.2016]
+  Version: 5 [1.15.2018]
   Description: This is the core file for the Basicss Object-Oriented Scaling CSS framework.
   Contents:
   - Setup/Reset
@@ -21,10 +21,8 @@
   - Material Icon Font - ref: https://www.google.com/design/icons/
   - Material Icon Font - ex: <i class="material-icons">face</i>
   # CHANGELOG 
-  - .desktop/.touch deprecated. Replaced with .high-on/.high-off and .low-on/.low-off
-    for a little more control through those ranges.
-/
-*/
+  - Flex rows when in .row, float rows when not. The difference is not noticeable. 
+/*/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,400italic,700italic,800italic);
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
@@ -43,7 +41,7 @@
   outline: 0;
   box-sizing: inherit;
   /* this disables font boosting on mobile chrome... */
-  max-height: 10000vh;
+  max-height: 100000vh;
   /* this might also do the same thing one day... */
   -webkit-text-size-adjust: none;
   -moz-text-size-adjust: none;
@@ -519,7 +517,7 @@ ol.lower-alpha { list-style: lower-alpha }
   -ms-flex-pack: justify
 }
 
-.flex.row        { flex-direction: row; -ms-flex-direction: row }
+
 .flex.row-rev    { flex-direction: row-reverse; -ms-flex-direction: row-reverse }
 .flex.col        { flex-direction: column; -ms-flex-direction: column }
 .flex.col-rev    { flex-direction: column-reverse; -ms-flex-direction: column-reverse }
@@ -560,7 +558,7 @@ ol.lower-alpha { list-style: lower-alpha }
 .flex-item.bottom { align-self: flex-end; }
 .flex-item.middle { align-self: center; }
 .flex-item.stretch{ align-self: stretch; }
-.flex-item.content{ align-self: baselinet; }
+.flex-item.content{ align-self: baseline; }
 
 .order-0 { order: 0; -ms-box-ordinal: 0 }
 .order-1 { order: 1; -ms-box-ordinal: 1 }
@@ -586,9 +584,20 @@ ol.lower-alpha { list-style: lower-alpha }
   margin-right: auto
 }
 
-.row { width: 100%; float: left }
+.row { 
+  display: flex !important;
+}
 
-[class*=col-] { float: left }
+[class*=col-] { 
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+  float: left;
+}
+
+.row > [class*=col-] {
+  float: none;
+}
 
 .row::after,
 .contain::after,
@@ -631,6 +640,10 @@ screen and (orientation: portrait) {
   .contain {
     width: calc( 100% - 3rem );
   }
+  
+  .row {
+    flex-direction: column;
+  }
 
   .row > [class*=col-] {
     width: 100% !important;
@@ -647,7 +660,7 @@ screen and (orientation: portrait) {
   .desktop,
   .low-off  { display: none !important }
   .touch,
-  .low-on   { display: block !important }
+  .low-on   { display: initial !important }
 
   .low-1-1 { width: 100% }
   .low-3-4 { width: 75% }
@@ -668,7 +681,7 @@ screen and (orientation: portrait) {
 
 @media (min-width: 800px) {
   .desktop,
-  .high-on  { display: block }
+  .high-on  { display: initial }
   .touch,
   .high-off { display: none }
 }
